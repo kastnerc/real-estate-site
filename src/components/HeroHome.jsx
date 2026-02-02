@@ -13,19 +13,19 @@ export default function HeroHome() {
             <div className="absolute top-0 left-0 w-full h-full bg-black/30"></div>
 
             <div className="absolute flex border-black w-full h-full justify-center items-center flex-col">
-                <h1 className="font-semi-bold text-white text-6xl uppercase">
-                    Gendron-Kastner
+                <h1 className="font-semi-bold text-white text-6xl uppercase mb-3">
+                    Gendron | Kastner
                 </h1>
                 <h2 className="text-2xl text-white">
                     Investissement immobilier a Gatineau-Hull
                 </h2>
 
                 <div className="flex items-center gap-4 mt-5">
-                    <button className="bg-white py-2 px-4 mx-5 border uppercase">
+                    <button className="bg-white py-3 px-7 mx-5 border uppercase">
                         Button 1
                     </button>
 
-                    <button className="bg-transparent py-2 px-4 mx-5 border uppercase border-white text-white">
+                    <button className="backdrop-blur-sm py-3 px-7 mx-5 border uppercase border-white text-white">
                         Button 2
                     </button>
                 </div>
