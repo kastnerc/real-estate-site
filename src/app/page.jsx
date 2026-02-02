@@ -27,7 +27,7 @@ export default function Home() {
                         ducimus impedit nobis molestiae facere pariatur ex
                         quaerat sed beatae laudantium necessitatibus, laboriosam
                         in."
-                imageSrc="/Triplex.png"
+                imageSrc="/images/Triplex.png"
                 imageAlt="Lorem ipsum dolor sit"
             />
 
