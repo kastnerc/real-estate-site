@@ -8,11 +8,11 @@ export default function SplitSection({
 }) {
     return (
         <section className="py-10">
-            <div className="grid grid-cols-2 gap-10 px-10 ">
-                <div className="text-center">
-                    <h1 className="text-2xl uppercase pb-4">{leftTitle}</h1>
-                    <p className="px-5">{leftParagraph}</p>
-                    <button className="bg-transparent py-2 px-4 m-5 border rounded border-black font-semibold">
+            <div className="grid grid-cols-2 gap-10 p-10">
+                <div className="flex flex-col justify-center">
+                    <h1 className="text-4xl uppercase pb-4">{leftTitle}</h1>
+                    <p>{leftParagraph}</p>
+                    <button className="self-start bg-transparent text-lg py-3 px-7 my-4 border-2 border-black uppercase">
                         Button 1
                     </button>
                 </div>
