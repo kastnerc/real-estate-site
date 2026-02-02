@@ -22,7 +22,7 @@ export default function SplitSection({
                         src={imageSrc}
                         width={1080}
                         height={1080}
-                        quality={100}
+                        quality={75}
                         alt={imageAlt}
                     />
                 </div>

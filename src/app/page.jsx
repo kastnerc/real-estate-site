@@ -1,5 +1,6 @@
 import HeroHome from '@/components/HeroHome'
 import SplitSection from '@/components/SplitSection'
+import CardSection from '@/components/CardSection'
 
 export default function Home() {
     return (
@@ -28,6 +29,8 @@ export default function Home() {
                 imageSrc="/Triplex.png"
                 imageAlt="Lorem ipsum dolor sit"
             />
+
+            <CardSection />
         </main>
     )
 }
