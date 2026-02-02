@@ -3,7 +3,7 @@ export default function CardSection() {
         <section className="relative overflow-hidden p-10">
             <div
                 className="absolute inset-0 bg-center bg-cover bg-fixed"
-                style={{ backgroundImage: `url('/Gatineau Skyline.jpg')` }}
+                style={{ backgroundImage: `url('/images/Gatineau Skyline.jpg')` }}
             ></div>
 
             <div className="absolute top-0 left-0 w-full h-full bg-black/20"></div>
