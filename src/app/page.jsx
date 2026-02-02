@@ -1,6 +1,7 @@
 import HeroHome from '@/components/HeroHome'
 import SplitSection from '@/components/SplitSection'
 import CardSection from '@/components/CardSection'
+import ContactCTA from '@/components/ContactCTA'
 
 export default function Home() {
     return (
@@ -31,6 +32,8 @@ export default function Home() {
             />
 
             <CardSection />
+
+            <ContactCTA />
         </main>
     )
 }
