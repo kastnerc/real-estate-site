@@ -7,7 +7,7 @@ export default function HeroHome() {
                 loop
                 muted
                 playsInline
-                src="/videos/drone.webm"
+                src="/videos/Drone footage.mp4"
             ></video>
 
             <div className="absolute top-0 left-0 w-full h-full bg-black/30"></div>
@@ -29,6 +29,12 @@ export default function HeroHome() {
                         Button 2
                     </button>
                 </div>
+            </div>
+
+            <div className="absolute inset-x-0 bottom-8 flex flex-col text-center items-center text-white">
+                <span className="text-md">Scroll down</span>
+
+                <span className="animate-bounce text-lg">↓</span>
             </div>
         </div>
     )
