@@ -10,7 +10,7 @@ export default function SplitSection({
         <section className="py-10">
             <div className="grid grid-cols-2 gap-10 p-10">
                 <div className="flex flex-col justify-center">
-                    <h1 className="text-4xl uppercase pb-4">{leftTitle}</h1>
+                    <h1 className="text-3xl uppercase pb-4">{leftTitle}</h1>
                     <p>{leftParagraph}</p>
                     <button className="self-start bg-transparent text-lg py-3 px-7 my-4 border-2 border-black uppercase">
                         Button 1

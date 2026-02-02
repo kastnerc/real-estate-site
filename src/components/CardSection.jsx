@@ -9,7 +9,7 @@ export default function CardSection() {
             <div className="absolute top-0 left-0 w-full h-full bg-black/20"></div>
 
             <div className="relative text-center">
-                <h1 className="text-2xl uppercase text-white">Our Approach</h1>
+                <h1 className="text-3xl uppercase text-white">Our Approach</h1>
             </div>
             <div className="relative grid grid-cols-1 md:grid-cols-3 gap-10 p-10 ">
                 <div className="text-center backdrop-blur-md border border-white px-5 py-3">
