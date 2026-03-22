@@ -46,7 +46,10 @@ export default function Nav() {
                 </li>
 
                 <li className="mx-10 backdrop-blur-sm relative border border-white p-2 hover:bg-white hover:text-black transition-colors duration-300 ease-out">
-                    <Link href="/" className="block w-full h-full text-center no-underline uppercase">
+                    <Link
+                        href="/Contact"
+                        className="block w-full h-full text-center no-underline uppercase"
+                    >
                         Contact Us
                     </Link>
                 </li>

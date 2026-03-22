@@ -1,5 +1,8 @@
 # To-do & Known Bugs
 ## Homepage
+- Make it snap to scroll
+- Make it 
+
 ### Nav
 - The Contact Us box isn't fully clickable, only the link
 
@@ -9,6 +12,7 @@
 
 ### SplitSection
 - Styling needs to be perfected
+- Add slideshow component
 
 ### ContactCTA
 - Button clickable + hovering animation
