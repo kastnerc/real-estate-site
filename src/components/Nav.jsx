@@ -16,7 +16,7 @@ export default function Nav() {
                         href="/"
                         className="relative group inline-block uppercase"
                     >
-                        <span className="relative z-10">Contact</span>
+                        <span className="relative z-10">our Projects</span>
 
                         <span
                             className="
@@ -30,7 +30,7 @@ export default function Nav() {
 
                 <li className="mx-10 relative">
                     <Link
-                        href="/"
+                        href="/About"
                         className="relative group inline-block uppercase"
                     >
                         <span className="relative z-10">About Us</span>
@@ -45,10 +45,10 @@ export default function Nav() {
                     </Link>
                 </li>
 
-                <li className="mx-10 backdrop-blur-sm relative border border-white p-2 hover:bg-white hover:text-black transition-colors duration-300 ease-out">
+                <li className="mx-10 backdrop-blur-sm relative border border-white hover:bg-white hover:text-black transition-colors duration-300 ease-out">
                     <Link
                         href="/Contact"
-                        className="block w-full h-full text-center no-underline uppercase"
+                        className="p-2 block w-full h-full text-center no-underline uppercase"
                     >
                         Contact Us
                     </Link>
