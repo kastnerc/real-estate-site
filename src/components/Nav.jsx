@@ -16,7 +16,7 @@ export default function Nav() {
                         href="/"
                         className="relative group inline-block uppercase"
                     >
-                        <span className="relative z-10">Contact</span>
+                        <span className="relative z-10">Our Projects</span>
 
                         <span
                             className="
@@ -30,7 +30,7 @@ export default function Nav() {
 
                 <li className="mx-10 relative">
                     <Link
-                        href="/"
+                        href="/About"
                         className="relative group inline-block uppercase"
                     >
                         <span className="relative z-10">About Us</span>
