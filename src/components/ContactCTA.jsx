@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export default function ContactCTA() {
     return (
         <section className="py-10 bg-black h-[50vh] flex items-center justify-center">
@@ -14,8 +16,13 @@ export default function ContactCTA() {
                         opportunities, or potential partnerships, GK Immobilier
                         would be happy to speak with you.
                     </h2>
-                    <button className="bg-transparent text-lg py-3 px-12 border border-white uppercase text-white">
-                        Button 1
+                    <button className="bg-transparent text-lg border border-white uppercase text-white hover:bg-white hover:text-black transition-colors duration-300 ease-out">
+                        <Link
+                            href="/"
+                            className="block w-full h-full py-3 px-7 text-center no-underline uppercase"
+                        >
+                            Contact Us
+                        </Link>
                     </button>
                 </div>
             </div>
