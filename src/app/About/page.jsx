@@ -9,7 +9,6 @@ export default function About() {
                 title="About Us"
                 subtitle="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel vero, reiciendis quo recusand"
                 imageSrc="'/images/Conference room.jpg'"
-                imageAlt="Office"
             />
 
             <TeamSection />
