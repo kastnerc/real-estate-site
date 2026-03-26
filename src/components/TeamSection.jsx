@@ -9,7 +9,7 @@ export default function TeamSection() {
                         Our team of investors <br /> & experts
                     </h1>
                 </div>
-                <div className="text-xl">
+                <div className="text-lg">
                     <h2>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Omnis aut architecto molestiae ratione nisi
