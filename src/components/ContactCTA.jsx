@@ -18,7 +18,7 @@ export default function ContactCTA() {
                     </h2>
                     <button className="bg-transparent text-lg border border-white uppercase text-white hover:bg-white hover:text-black transition-colors duration-300 ease-out">
                         <Link
-                            href="/"
+                            href="/contact"
                             className="block w-full h-full py-3 px-7 text-center no-underline uppercase"
                         >
                             Contact Us
