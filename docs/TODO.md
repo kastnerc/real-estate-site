@@ -1,18 +1,9 @@
-# To-do & Known Bugs
-## Homepage
-- Make it snap to scroll
-- Make it 
+## Other
+- Check for the rel=canocial error in lighthouse
 
-### Nav
-- The Contact Us box isn't fully clickable, only the link
+- Optimize everything using lighthouse (wait for final images and videos)
+- Add all placeholder texts (wait for final images and videos)
 
-### HeroHome
-- Gendron | Kastner's line isn't properly centered
-- Buttons aren't clickable + no hovering animation
-
-### SplitSection
-- Styling needs to be perfected
-- Add slideshow component
-
-### ContactCTA
-- Button clickable + hovering animation
+## Non-code
+- Drone video and images
+- Images of the cofounders
