@@ -1,0 +1,98 @@
+{
+    "meta": {
+        "home": {
+            "title": "Gendron & Kastner Immobilier Inc.",
+            "description": "Découvrez des opportunités d’investissement en immobilier multilogement à Gatineau–Hull avec Gendron & Kastner."
+        },
+        "about": {
+            "title": "À propos",
+            "description": "Découvrez Gendron & Kastner et notre approche de l’investissement en immobilier multilogement à Gatineau–Hull."
+        },
+        "contact": {
+            "title": "Contactez-nous",
+            "description": "Contactez Gendron & Kastner pour toute question sur l’investissement en immobilier multilogement à Gatineau–Hull."
+        }
+    },
+
+    "nav": {
+        "home": "Accueil",
+        "about": "À propos",
+        "contact": "Contact"
+    },
+
+    "pages": {
+        "home": {
+            "hero": {
+                "subtitle": "Investissement immobilier à Gatineau–Hull",
+                "scroll": "Faire défiler vers le bas"
+            },
+            "splitCarouselSection": {
+                "leftTitle": "Notre plus récente acquisition",
+                "leftParagraph": "Notre plus récente acquisition est un triplex situé dans le quartier du Parc-de-la-Montagne à Hull, à proximité du Casino du Lac-Leamy. Les rénovations prévues comprennent l'amélioration de la toiture et de l'enveloppe du bâtiment, la rénovation des logements, la mise à jour des finis en brique et en vinyle, ainsi que la restauration du balcon supérieur. Des améliorations en efficacité énergétique seront soutenues par des programmes tels que Rénoclimat, le programme SCHL Éco Améliorations et le Programme Rénovation Québec (PRQ)."
+            },
+            "cardSection": {
+                "title": "Notre approche",
+                "cardTitle1": "Acquisition",
+                "cardTitle2": "Gestion",
+                "cardTitle3": "Optimisation",
+                "paragraph1": "Nous acquérons des immeubles résidentiels multilogements dans la région de Gatineau–Hull. Chaque opportunité est évaluée à l’aide d’une analyse des indicateurs financiers, de l’emplacement, du potentiel à long terme et du potentiel de rénovation. Nous privilégions les propriétés où des améliorations peuvent créer une valeur durable.",
+                "paragraph2": "Nous gérons nos propriétés nous-mêmes. Nous coordonnons l’entretien des unités, supervisons les rénovations, communiquons directement avec les locataires, les sélectionnons et veillons à répondre à leurs besoins. Notre implication nous permet de maintenir des standards élevés et de réagir rapidement lorsque nécessaire.",
+                "paragraph3": "Nous améliorons nos propriétés grâce à des rénovations stratégiques et des améliorations opérationnelles. Notre objectif est d’augmenter la valeur, d’améliorer l’efficacité et de renforcer la stabilité à long terme. Une fois optimisées, nous refinançons afin de financer de futures acquisitions et d’élargir notre portefeuille."
+            },
+            "contactCTA": {
+                "title": "Intéressé à travailler avec nous?",
+                "subtitle": "Que vous ayez des questions sur nos activités, des opportunités d’investissement ou des partenariats potentiels, nous serons ravis d’échanger avec vous.",
+                "button": "Nous contacter"
+            }
+        },
+
+        "about": {
+            "hero": {
+                "title": "À propos de nous",
+                "subtitle": "Travailler aujourd’hui pour un avenir offrant davantage de liberté, fondé sur des actifs durables et la capacité de définir notre manière de vivre et de redonner.",
+                "scroll": "Faire défiler vers le bas"
+            },
+            "teamSection": {
+                "title1": "Une équipe,",
+                "title2": "Deux partenaires",
+                "subtitle": "Une vision commune, portée par des forces et des parcours distincts.",
+                "cofounder": "Cofondateur"
+            },
+            "cardCarousel": {
+                "title": "Notre vision",
+                "cardTitle1": "L’indépendance par l’immobilier",
+                "cardTitle2": "Bâtir avec les autres au fil du temps",
+                "cardTitle3": "Un mode de vie à long terme",
+                "paragraph1": "Nous croyons que l’immobilier est une voie vers l’indépendance, une façon de s’éloigner du modèle traditionnel d’employé et de reprendre le contrôle de notre temps et de notre énergie. Nous ne souhaitions plus travailler à la réalisation des objectifs de quelqu’un d’autre, et nous voulons que chaque étape que nous entreprenons soit consacrée à bâtir les nôtres.",
+                "paragraph2": "Bien que nous soyons actuellement deux partenaires, notre objectif à long terme est de bâtir quelque chose qui nous dépasse. Nous souhaitons collaborer, partager le succès et, éventuellement, créer un réseau de partenaires et de contributeurs qui évolueront à nos côtés.",
+                "paragraph3": "Le fait d’être jeunes nous offre la flexibilité d’apprendre, de prendre des risques calculés et de croître à notre propre rythme. Ce n’est pas seulement un investissement ou un projet, mais un mode de vie que nous construisons chaque jour."
+            }
+        },
+
+        "contact": {
+            "hero": {
+                "title": "Contact",
+                "subtitle": "Communiquez avec nous pour discuter d’opportunités d’investissement, de partenariats ou de projets immobiliers à Gatineau–Hull.",
+                "scroll": "Faire défiler vers le bas"
+            },
+            "splitFormSection": {
+                "title": "Coordonnées",
+                "name": "Nom",
+                "email": "Courriel",
+                "message": "Message",
+                "button": "Envoyer",
+                "modalMessage": "Message envoyé avec succès. Nous vous répondrons dans les plus brefs délais.",
+                "office": "Bureau",
+                "socials": "Réseaux sociaux"
+            }
+        }
+    },
+
+    "footer": {
+        "home": "Accueil",
+        "about": "À propos",
+        "contact": "Contact",
+        "copyright": "Droit d’auteur © 2026 Gendron & Kastner Immobilier",
+        "privacy": "Politique de confidentialité"
+    }
+}

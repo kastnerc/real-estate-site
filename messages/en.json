@@ -1,0 +1,105 @@
+{
+    "meta": {
+        "home": {
+            "title": "Gendron & Kastner Immobilier Inc. - Multi-Unit Investment in Gatineau–Hull",
+            "description": "Multi-unit residential real estate investment in Gatineau–Hull. Gendron & Kastner Immobilier Inc. invests in properties across the Outaouais region."
+        },
+        "about": {
+            "title": "About Us",
+            "description": "Learn about Gendron & Kastner Immobilier Inc. and our approach to real estate investment in Gatineau–Hull and the Outaouais region."
+        },
+        "contact": {
+            "title": "Contact Us",
+            "description": "Get in touch with Gendron & Kastner Immobilier Inc. to discuss real estate investment opportunities in Gatineau–Hull."
+        }
+    },
+
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "contact": "Contact"
+    },
+
+    "pages": {
+        "home": {
+            "hero": {
+                "subtitle": "Real Estate Investment in Gatineau–Hull",
+                "scroll": "Scroll down"
+            },
+            "splitCarouselSection": {
+                "leftTitle": "Our Latest Acquisition",
+                "leftParagraph": "Our most recent acquisition is a triplex located in the Parc-De-La-Montagne neighborhood of Hull, near Casino du Lac-Leamy. Planned renovations include roofing and envelope improvements, unit renovations, updated brick and vinyl finishes, and balcony restoration. Energy-efficiency upgrades will be supported by programs such as Rénoclimat, CMHC's Eco Improvement, and the Programme Rénovation Québec (PRQ)."
+            },
+            "cardSection": {
+                "title": "Our Approach",
+                "cardTitle1": "Acquisition",
+                "cardTitle2": "Management",
+                "cardTitle3": "Optimization",
+                "paragraph1": "We acquire multi-unit residential properties in Gatineau–Hull. Each opportunity is evaluated through an analysis of financial metrics, location, long-term potential, and renovation potential. We focus on properties where improvements can create long-term value.",
+                "paragraph2": "We manage our properties ourselves. We coordinate maintenance, oversee renovations, communicate directly with tenants, select them, and ensure their needs are met. Staying involved allows us to maintain high standards and respond quickly when needed.",
+                "paragraph3": "We improve our properties through strategic renovations and operational enhancements. Our objective is to increase value, enhance efficiency, and strengthen long-term stability. Once optimized, we refinance to fund future acquisitions and expand our portfolio."
+            },
+            "contactCTA": {
+                "title": "Interested in working with us?",
+                "subtitle": "Whether you have questions about what we do, investment opportunities, or potential partnerships, we will be happy to speak with you.",
+                "button": "Contact Us"
+            }
+        },
+        "about": {
+            "hero": {
+                "title": "About Us",
+                "subtitle": "Working today for a future with more freedom, built on lasting wealth and the ability to shape how we live and give.",
+                "scroll": "Scroll down",
+                "imageAlt": "PLACERHOLDER ABOUT"
+            },
+            "teamSection": {
+                "title1": "One team,",
+                "title2": "Two partners",
+                "subtitle": "One shared vision, approached through different strengths and paths.",
+                "cofounder": "Co-Founder",
+                "imageAlt1": "Loïc Gendron, co-founder of Gendron & Kastner Immobilier",
+                "imageAlt2": "Caleb Kastner, co-founder of Gendron & Kastner Immobilier"
+            },
+            "cardCarousel": {
+                "title": "Our Vision",
+                "cardTitle1": "Independence Through Real Estate",
+                "cardTitle2": "Building With Others Over Time",
+                "cardTitle3": "A Long-Term Way of Living",
+                "paragraph1": "We believe real estate is a path to independence, a way to step outside the traditional employee lifestyle and take control of how we spend our time and energy. We were no longer interested in working toward someone else’s goals, and we want every step we take to be focused on building our own.",
+                "paragraph2": "While we are currently two partners, our long-term goal is to grow something that extends beyond us. We want to collaborate, share success, and eventually build a network of partners and contributors who grow alongside us.",
+                "paragraph3": "Being young gives us the flexibility to learn, take calculated risks, and grow at our own pace. This is not just an investment or a project, it’s a way of life we are building every day."
+            }
+        },
+        "contact": {
+            "hero": {
+                "title": "Contact Us",
+                "subtitle": "Reach out to discuss investment opportunities, partnerships, or real estate projects in Gatineau–Hull.",
+                "scroll": "Scroll down",
+                "imageAlt": "PLACERHOLDER CONTACT"
+            },
+            "splitFormSection": {
+                "title": "Contact Info",
+                "name": "Name",
+                "namePlaceholder": "Enter your name",
+                "email": "Email",
+                "emailPlaceholder": "Enter your email",
+                "message": "Message",
+                "messagePlaceholder": "Write your message...",
+                "button": "Submit",
+                "modalMessage": "Message successfully sent. We will get back to you as soon as possible.",
+                "office": "Office",
+                "socials": "Socials"
+            }
+        }
+    },
+    "footer": {
+        "home": "Home",
+        "about": "About",
+        "contact": "Contact",
+        "copyright": "Copyright © 2026 Gendron & Kastner Immobilier",
+        "privacy": "Privacy Policy"
+    },
+    "common": {
+        "loading": "Loading..."
+    }
+}
