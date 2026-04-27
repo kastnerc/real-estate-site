@@ -1,39 +1,54 @@
+'use client'
+
+import { useTranslations } from 'next-intl'
+
 export default function HeroHome() {
+    const t = useTranslations('pages.home')
+
     return (
         <div className="relative h-screen w-full overflow-hidden">
             <video
-                className="absolute top-0 left-0 w-full h-full object-cover"
+                className="absolute inset-0 w-full h-full object-cover"
                 autoPlay
                 loop
                 muted
                 playsInline
                 src="/videos/Drone footage.mp4"
-            ></video>
+            />
 
-            <div className="absolute top-0 left-0 w-full h-full bg-black/30"></div>
+            <div className="absolute inset-0 bg-black/30" />
 
-            <div className="absolute flex border-black w-full h-full justify-center items-center flex-col">
-                <h1 className="font-semi-bold text-white text-6xl uppercase mb-3">
-                    Gendron | Kastner
+            <div className="absolute inset-0 flex flex-col justify-center items-center px-4 sm:px-6 lg:px-12 text-center">
+                <h1
+                    className="
+                    flex items-center justify-center w-full max-w-5xl
+                    text-white uppercase
+                    text-2xl sm:text-4xl md:text-5xl lg:text-6xl
+                    tracking-wide
+                "
+                >
+                    <span className="sm:flex-1 text-right">Gendron</span>
+
+                    <span className="mx-2 sm:mx-4 md:mx-6">&</span>
+
+                    <span className="sm:flex-1 text-left">Kastner</span>
                 </h1>
-                <h2 className="text-2xl text-white">
-                    Investissement immobilier a Gatineau-Hull
-                </h2>
 
-                <div className="flex items-center gap-4 mt-5">
-                    <button className="bg-white py-3 px-7 mx-5 border uppercase">
-                        Button 1
-                    </button>
-
-                    <button className="backdrop-blur-sm py-3 px-7 mx-5 border uppercase border-white text-white">
-                        Button 2
-                    </button>
-                </div>
+                <p
+                    className="
+                    text-white sm:my-3
+                    text-sm sm:text-base md:text-xl lg:text-2xl
+                    max-w-xl
+                "
+                >
+                    {t('hero.subtitle')}
+                </p>
             </div>
 
-            <div className="absolute inset-x-0 bottom-8 flex flex-col text-center items-center text-white">
-                <span className="text-md">Scroll down</span>
-
+            <div className="absolute bottom-6 w-full flex flex-col items-center text-white">
+                <span className="text-xs sm:text-sm md:text-base">
+                    {t('hero.scroll')}
+                </span>
                 <span className="animate-bounce text-lg">↓</span>
             </div>
         </div>
