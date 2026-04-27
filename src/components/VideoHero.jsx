@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl'
 
-export default function HeroHome() {
+export default function VideoHero() {
     const t = useTranslations('pages.home')
 
     return (

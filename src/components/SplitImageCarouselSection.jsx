@@ -5,7 +5,7 @@ import React, { useState } from 'react'
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs'
 import { RxDotFilled } from 'react-icons/rx'
 
-export default function SplitCarouselSection({ leftTitle, leftParagraph, slides }) {
+export default function SplitImageCarouselSection({ leftTitle, leftParagraph, slides }) {
     const [touchStart, setTouchStart] = useState(null)
     const [touchEnd, setTouchEnd] = useState(null)
 

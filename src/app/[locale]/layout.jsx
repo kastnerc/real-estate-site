@@ -1,5 +1,5 @@
 import './globals.css'
-import Nav from '@/components/Nav'
+import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import { Fahkwang } from 'next/font/google'
 
@@ -62,7 +62,7 @@ export default async function RootLayout({ children, params }) {
             >
                 <NextIntlClientProvider>
                     <main className="snap-y snap-proximity h-screen overflow-y-scroll relative">
-                        <Nav />
+                        <Navbar />
 
                         {children}
 

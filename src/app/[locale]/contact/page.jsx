@@ -1,19 +1,19 @@
-import Hero from '@/components/Hero'
+import ImageHero from '@/components/ImageHero'
 import SplitFormSection from '@/components/SplitFormSection'
 import { useTranslations } from 'next-intl'
 import { getTranslations } from 'next-intl/server'
 import { getSeo } from '@/lib/seo'
 
 export async function generateMetadata({ params }) {
-  const { locale } = await params
-  const t = await getTranslations({ locale, namespace: 'meta.contact' })
+    const { locale } = await params
+    const t = await getTranslations({ locale, namespace: 'meta.contact' })
 
-  return getSeo({
-    locale,
-    path: '/contact',
-    title: t('title'),
-    description: t('description'),
-  })
+    return getSeo({
+        locale,
+        path: '/contact',
+        title: t('title'),
+        description: t('description'),
+    })
 }
 
 export default function Contact() {
@@ -22,7 +22,7 @@ export default function Contact() {
     return (
         <>
             <section className="snap-start min-h-screen">
-                <Hero
+                <ImageHero
                     title={t('hero.title')}
                     subtitle={t('hero.subtitle')}
                     scroll={t('hero.scroll')}

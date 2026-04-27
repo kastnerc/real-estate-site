@@ -1,23 +1,22 @@
-import HeroHome from '@/components/HeroHome'
-import SplitCarouselSection from '@/components/SplitCarouselSection'
+import VideoHero from '@/components/VideoHero'
 import SplitVideoSection from '@/components/SplitVideoSection'
-import CardSection from '@/components/CardSection'
-import CardCarousel from '@/components/CardCarousel'
+import CardGridSection from '@/components/CardGridSection'
+import CardCarouselSection from '@/components/CardCarouselSection'
 import ContactCTA from '@/components/ContactCTA'
 import { useTranslations } from 'next-intl'
 import { getTranslations } from 'next-intl/server'
 import { getSeo } from '@/lib/seo'
 
 export async function generateMetadata({ params }) {
-  const { locale } = await params
-  const t = await getTranslations({ locale, namespace: 'meta.home' })
+    const { locale } = await params
+    const t = await getTranslations({ locale, namespace: 'meta.home' })
 
-  return getSeo({
-    locale,
-    path: '',
-    title: t('title'),
-    description: t('description'),
-  })
+    return getSeo({
+        locale,
+        path: '',
+        title: t('title'),
+        description: t('description'),
+    })
 }
 
 export default function Home() {
@@ -25,11 +24,10 @@ export default function Home() {
     return (
         <>
             <section className="snap-start min-h-screen">
-                <HeroHome />
+                <VideoHero />
             </section>
 
             <section className="snap-start min-h-screen">
-
                 <SplitVideoSection
                     leftTitle={t('splitCarouselSection.leftTitle')}
                     leftParagraph={t('splitCarouselSection.leftParagraph')}
@@ -38,20 +36,20 @@ export default function Home() {
             </section>
 
             <section className="hidden sm:block snap-start min-h-screen">
-                <CardSection
-                    title={t('cardSection.title')}
+                <CardGridSection
+                    title={t('cardGridSection.title')}
                     cards={[
                         {
-                            title: t('cardSection.cardTitle1'),
-                            paragraph: t('cardSection.paragraph1'),
+                            title: t('cardGridSection.cardTitle1'),
+                            paragraph: t('cardGridSection.paragraph1'),
                         },
                         {
-                            title: t('cardSection.cardTitle2'),
-                            paragraph: t('cardSection.paragraph2'),
+                            title: t('cardGridSection.cardTitle2'),
+                            paragraph: t('cardGridSection.paragraph2'),
                         },
                         {
-                            title: t('cardSection.cardTitle3'),
-                            paragraph: t('cardSection.paragraph3'),
+                            title: t('cardGridSection.cardTitle3'),
+                            paragraph: t('cardGridSection.paragraph3'),
                             isWide: true,
                         },
                     ]}
@@ -61,17 +59,17 @@ export default function Home() {
             </section>
 
             <section className="block sm:hidden snap-start min-h-screen">
-                <CardCarousel
-                    title={t('cardSection.title')}
+                <CardCarouselSection
+                    title={t('cardGridSection.title')}
                     cardTitles={[
-                        t('cardSection.cardTitle1'),
-                        t('cardSection.cardTitle2'),
-                        t('cardSection.cardTitle3'),
+                        t('cardGridSection.cardTitle1'),
+                        t('cardGridSection.cardTitle2'),
+                        t('cardGridSection.cardTitle3'),
                     ]}
                     paragraphs={[
-                        t('cardSection.paragraph1'),
-                        t('cardSection.paragraph2'),
-                        t('cardSection.paragraph3'),
+                        t('cardGridSection.paragraph1'),
+                        t('cardGridSection.paragraph2'),
+                        t('cardGridSection.paragraph3'),
                     ]}
                     imageSrc="/images/gatineau-skyline.jpg"
                     transparency={30}

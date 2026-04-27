@@ -5,7 +5,7 @@ import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs'
 import { RxDotFilled } from 'react-icons/rx'
 import Image from 'next/image'
 
-export default function CardCarousel({
+export default function CardCarouselSection({
     paragraphs,
     cardTitles,
     title,

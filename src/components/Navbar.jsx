@@ -7,14 +7,14 @@ import { useState } from 'react'
 import { useTranslations } from 'next-intl'
 import LocaleSwitcher from './LocaleSwitcher'
 
-export default function Nav() {
+export default function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false)
 
     const handleNav = () => {
         setMenuOpen(!menuOpen)
     }
 
-    const t = useTranslations()
+    const t = useTranslations('navbar')
 
     return (
         <nav>
@@ -50,7 +50,7 @@ export default function Nav() {
                                     className="relative py-2 px-3 md:px-4 block w-full h-full text-center no-underline uppercase group"
                                 >
                                     <span className="z-10 mx-auto">
-                                        {t('nav.home')}
+                                        {t('home')}
                                     </span>
 
                                     <span
@@ -67,7 +67,7 @@ export default function Nav() {
                                     className="relative py-2 px-3 md:px-4 block w-full h-full text-center no-underline uppercase group"
                                 >
                                     <span className="z-10 mx-auto">
-                                        {t('nav.about')}
+                                        {t('about')}
                                     </span>
 
                                     <span
@@ -84,7 +84,7 @@ export default function Nav() {
                                     href="/contact"
                                     className="py-2 px-3 md:px-4 block w-full h-full text-center no-underline uppercase"
                                 >
-                                    {t('nav.contact')}
+                                    {t('contact')}
                                 </Link>
                             </li>
 
@@ -132,7 +132,7 @@ export default function Nav() {
                                     href="/"
                                     onClick={() => setMenuOpen(false)}
                                 >
-                                    {t('nav.home')}
+                                    {t('home')}
                                 </Link>
                             </li>
 
@@ -141,7 +141,7 @@ export default function Nav() {
                                     href="/about"
                                     onClick={() => setMenuOpen(false)}
                                 >
-                                    {t('nav.about')}
+                                    {t('about')}
                                 </Link>
                             </li>
 
@@ -150,7 +150,7 @@ export default function Nav() {
                                     href="/contact"
                                     onClick={() => setMenuOpen(false)}
                                 >
-                                    {t('nav.contact')}
+                                    {t('contact')}
                                 </Link>
                             </li>
                         </ul>

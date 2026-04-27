@@ -2,18 +2,18 @@ import Image from 'next/image'
 import { FaLinkedinIn } from 'react-icons/fa'
 import { useTranslations } from 'next-intl'
 
-export default function TeamSection({ imageAlt1, imageAlt2 }) {
-    const t = useTranslations('pages.about')
+export default function TeamGridSection() {
+    const t = useTranslations('pages.about.teamGridSection')
 
     return (
         <section className="min-h-screen flex w-full sm:p-10 p-5">
             <div className="grid grid-cols-1 sm:grid-cols-2 grid-rows-[auto_auto_1fr] sm:grid-rows-[auto_1fr] gap-5 sm:gap-10 m-auto xl:max-w-[50vw] lg:max-w-[75vw]">
                 <h1 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl uppercase tracking-wide pl-2 sm:pl-0">
-                    {t('teamSection.title1')} <br /> {t('teamSection.title2')}
+                    {t('title1')} <br /> {t('title2')}
                 </h1>
 
                 <h2 className="text-sm md:text-md lg:text-lg xl:text-xl sm:text-end sm:mt-auto pl-2 sm:pl-0">
-                    {t('teamSection.subtitle')}
+                    {t('subtitle')}
                 </h2>
 
                 <div className="sm:col-span-2 grid grid-cols-1 [@media(min-width:375px)]:grid-cols-2 gap-2 [@media(min-width:375px)]:gap-5 [@media(min-width:640px)]:gap-10 [@media(min-width:375px)]:px-0 px-12">
@@ -23,7 +23,7 @@ export default function TeamSection({ imageAlt1, imageAlt2 }) {
                             width={1080}
                             height={1080}
                             quality={75}
-                            alt={imageAlt1}
+                            alt={t('imageAlt1')}
                             className="transition-transform duration-300 hover:scale-105"
                         />
 
@@ -33,7 +33,7 @@ export default function TeamSection({ imageAlt1, imageAlt2 }) {
                                     Loic Gendron
                                 </h3>
                                 <h4 className="text-xs md:text-sm lg:text-md xl:text-lg">
-                                    {t('teamSection.cofounder')}
+                                    {t('cofounder')}
                                 </h4>
                             </div>
 
@@ -54,7 +54,7 @@ export default function TeamSection({ imageAlt1, imageAlt2 }) {
                             width={1080}
                             height={1080}
                             quality={75}
-                            alt={imageAlt2}
+                            alt={t('imageAlt2')}
                             className="transition-transform duration-300 hover:scale-105"
                         />
 
@@ -64,7 +64,7 @@ export default function TeamSection({ imageAlt1, imageAlt2 }) {
                                     Caleb Kastner
                                 </h3>
                                 <h4 className="text-xs md:text-sm lg:text-md xl:text-lg">
-                                    {t('teamSection.cofounder')}
+                                    {t('cofounder')}
                                 </h4>
                             </div>
 

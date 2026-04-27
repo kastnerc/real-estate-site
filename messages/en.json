@@ -14,7 +14,7 @@
         }
     },
 
-    "nav": {
+    "navbar": {
         "home": "Home",
         "about": "About",
         "contact": "Contact"
@@ -30,7 +30,7 @@
                 "leftTitle": "Our Latest Acquisition",
                 "leftParagraph": "Our most recent acquisition is a triplex located in the Parc-De-La-Montagne neighborhood of Hull, near Casino du Lac-Leamy. Planned renovations include roofing and envelope improvements, unit renovations, updated brick and vinyl finishes, and balcony restoration. Energy-efficiency upgrades will be supported by programs such as Rénoclimat, CMHC's Eco Improvement, and the Programme Rénovation Québec (PRQ)."
             },
-            "cardSection": {
+            "cardGridSection": {
                 "title": "Our Approach",
                 "cardTitle1": "Acquisition",
                 "cardTitle2": "Management",
@@ -52,7 +52,7 @@
                 "scroll": "Scroll down",
                 "imageAlt": "PLACERHOLDER ABOUT"
             },
-            "teamSection": {
+            "teamGridSection": {
                 "title1": "One team,",
                 "title2": "Two partners",
                 "subtitle": "One shared vision, approached through different strengths and paths.",
@@ -60,7 +60,7 @@
                 "imageAlt1": "Loïc Gendron, co-founder of Gendron & Kastner Immobilier",
                 "imageAlt2": "Caleb Kastner, co-founder of Gendron & Kastner Immobilier"
             },
-            "cardCarousel": {
+            "cardCarouselSection": {
                 "title": "Our Vision",
                 "cardTitle1": "Independence Through Real Estate",
                 "cardTitle2": "Building With Others Over Time",

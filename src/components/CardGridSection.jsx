@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-export default function CardSection({ title, cards, imageSrc, transparency }) {
+export default function CardGridSection({ title, cards, imageSrc, transparency }) {
     return (
         <section className="relative overflow-hidden min-h-screen flex items-center sm:p-10 p-3">
             <Image

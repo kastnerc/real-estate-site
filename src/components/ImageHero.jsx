@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-export default function Hero({ title, subtitle, scroll, imageSrc, imageAlt }) {
+export default function ImageHero({ title, subtitle, scroll, imageSrc, imageAlt }) {
     return (
         <div className="relative h-screen w-full overflow-hidden">
             <Image
