@@ -1,48 +1,82 @@
 import Image from 'next/image'
+import { FaLinkedinIn } from 'react-icons/fa'
+import { useTranslations } from 'next-intl'
 
-export default function TeamSection() {
+export default function TeamSection({ imageAlt1, imageAlt2 }) {
+    const t = useTranslations('pages.about')
+
     return (
-        <section className="min-h-screen mx-auto w-[60vw]">
-            <div className="grid grid-cols-2 gap-10 px-10 py-10">
-                <div className="text-4xl uppercase">
-                    <h1>
-                        Our team of investors <br /> & experts
-                    </h1>
-                </div>
-                <div className="text-lg">
-                    <h2>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Omnis aut architecto molestiae ratione nisi
-                    </h2>
-                </div>
-            </div>
-            <div className="grid grid-cols-2 gap-10 p-10">
-                <div className="">
-                    <Image
-                        src="/images/Man.jpg"
-                        width={1080}
-                        height={1080}
-                        quality={75}
-                        alt="man"
-                    />
+        <section className="min-h-screen flex w-full sm:p-10 p-5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 grid-rows-[auto_auto_1fr] sm:grid-rows-[auto_1fr] gap-5 sm:gap-10 m-auto xl:max-w-[50vw] lg:max-w-[75vw]">
+                <h1 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl uppercase tracking-wide pl-2 sm:pl-0">
+                    {t('teamSection.title1')} <br /> {t('teamSection.title2')}
+                </h1>
 
-                    <div className="bg-gray-100 p-5">
-                        <h3 className="font-bold text-xl">Loic Gendron</h3>
-                        <h4 className="text-large">Coproprietaire</h4>
+                <h2 className="text-sm md:text-md lg:text-lg xl:text-xl sm:text-end sm:mt-auto pl-2 sm:pl-0">
+                    {t('teamSection.subtitle')}
+                </h2>
+
+                <div className="sm:col-span-2 grid grid-cols-1 [@media(min-width:375px)]:grid-cols-2 gap-2 [@media(min-width:375px)]:gap-5 [@media(min-width:640px)]:gap-10 [@media(min-width:375px)]:px-0 px-12">
+                    <div className="relative mb-12 sm:mb-16">
+                        <Image
+                            src="/images/Man.jpg"
+                            width={1080}
+                            height={1080}
+                            quality={75}
+                            alt={imageAlt1}
+                            className="transition-transform duration-300 hover:scale-105"
+                        />
+
+                        <div className="flex justify-between items-center bg-white text-left p-3 sm:p-4 m-1.5 sm:m-2 md:m-3 lg:m-4 absolute top-full [@media(min-width:640px)]:-translate-y-1/2 -translate-y-1/2 [@media(min-width:375px)]:-translate-y-1/3 inset-x-0 shadow-lg">
+                            <div>
+                                <h3 className="font-bold text-sm md:text-md lg:text-lg xl:text-xl mr-1">
+                                    Loic Gendron
+                                </h3>
+                                <h4 className="text-xs md:text-sm lg:text-md xl:text-lg">
+                                    {t('teamSection.cofounder')}
+                                </h4>
+                            </div>
+
+                            <a
+                                href="https://www.linkedin.com/in/lo%C3%AFc-gendron/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="p-2 cursor-pointer transition-transform duration-200 hover:scale-120 hover:text-gray-700 text-xl lg:text-2xl"
+                            >
+                                <FaLinkedinIn />
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div className="">
-                    <Image
-                        src="/images/Man.jpg"
-                        width={1080}
-                        height={1080}
-                        quality={75}
-                        alt="man"
-                    />
 
-                    <div className="bg-gray-100 p-5">
-                        <h3 className="font-bold text-xl">Loic Gendron</h3>
-                        <h4 className="text-large">Coproprietaire</h4>
+                    <div className="relative mb-12 sm:mb-16">
+                        <Image
+                            src="/images/Man.jpg"
+                            width={1080}
+                            height={1080}
+                            quality={75}
+                            alt={imageAlt2}
+                            className="transition-transform duration-300 hover:scale-105"
+                        />
+
+                        <div className="flex justify-between items-center bg-white text-left p-3 sm:p-4 m-1.5 sm:m-2 md:m-3 lg:m-4 absolute top-full [@media(min-width:640px)]:-translate-y-1/2 -translate-y-1/2 [@media(min-width:375px)]:-translate-y-1/3 inset-x-0 shadow-lg">
+                            <div>
+                                <h3 className="font-bold text-sm md:text-md lg:text-lg xl:text-xl">
+                                    Caleb Kastner
+                                </h3>
+                                <h4 className="text-xs md:text-sm lg:text-md xl:text-lg">
+                                    {t('teamSection.cofounder')}
+                                </h4>
+                            </div>
+
+                            <a
+                                href="https://www.linkedin.com/in/caleb-kastner/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="p-2 cursor-pointer transition-transform duration-200 hover:scale-120 hover:text-gray-700 text-xl lg:text-2xl"
+                            >
+                                <FaLinkedinIn />
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
