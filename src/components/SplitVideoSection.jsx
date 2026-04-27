@@ -1,9 +1,6 @@
-'use client'
-
 export default function SplitVideoSection({
     leftTitle,
-    leftParagraph,
-    videoSrc,
+    leftParagraph
 }) {
     return (
         <section className="min-h-screen flex items-center sm:p-10 p-5">

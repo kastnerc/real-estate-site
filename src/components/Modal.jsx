@@ -1,3 +1,5 @@
+'use client'
+
 import { AiOutlineClose } from 'react-icons/ai'
 import { useState } from 'react'
 
