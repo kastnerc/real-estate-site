@@ -32,10 +32,8 @@ export default function CardCarousel({
         const distance = touchStart - touchEnd
 
         if (distance > minSwipeDistance) {
-            // swipe left → next
             nextSlide()
         } else if (distance < -minSwipeDistance) {
-            // swipe right → prev
             prevSlide()
         }
     }
@@ -73,7 +71,6 @@ export default function CardCarousel({
                     className={`absolute inset-0 bg-black/${transparency}`}
                 ></div>
 
-                {/* CONTENT */}
                 <div className="text-center">
                     <h2 className="relative mb-5 text-xl md:text-2xl lg:text-3xl xl:text-4xl uppercase text-white tracking-wide">
                         {title}

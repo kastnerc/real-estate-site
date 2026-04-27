@@ -2,7 +2,6 @@ export default function PrivacyPolicy() {
   return (
     <main className="max-w-3xl mx-auto px-6 py-20 leading-relaxed">
       
-      {/* ENGLISH */}
       <section className="space-y-6">
         <h1 className="text-3xl font-semibold">
           Privacy Policy
@@ -46,14 +45,12 @@ export default function PrivacyPolicy() {
         <p>
           If you have any questions about this Privacy Policy, please contact us at:
           <br />
-          <span className="font-medium">[your email here]</span>
+          <span className="font-medium">gkimmobilier@outlook.com</span>
         </p>
       </section>
 
-      {/* Divider */}
       <hr className="my-16" />
 
-      {/* FRENCH */}
       <section className="space-y-6">
         <h1 className="text-3xl font-semibold">
           Politique de confidentialité
@@ -97,7 +94,7 @@ export default function PrivacyPolicy() {
         <p>
           Pour toute question, contactez-nous à :
           <br />
-          <span className="font-medium">[votre courriel ici]</span>
+          <span className="font-medium">gkimmobilier@outlook.com</span>
         </p>
       </section>
     </main>

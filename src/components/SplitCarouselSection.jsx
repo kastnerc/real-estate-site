@@ -55,7 +55,6 @@ export default function SplitCarouselSection({ leftTitle, leftParagraph, slides 
     return (
         <section className="min-h-screen flex items-center sm:p-10 p-5">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 sm:gap-12 lg:gap-20 w-full items-center">
-                {/* TEXT */}
                 <div className="max-w-xl mx-auto">
                     <h2 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl uppercase mb-2 sm:mb-3 text-center md:text-left tracking-wide">
                         {leftTitle}
@@ -66,7 +65,6 @@ export default function SplitCarouselSection({ leftTitle, leftParagraph, slides 
                     </p>
                 </div>
                 
-                {/* SLIDER */}
                 <div
                     className="flex justify-center"
                     onTouchStart={onTouchStart}
@@ -74,7 +72,6 @@ export default function SplitCarouselSection({ leftTitle, leftParagraph, slides 
                     onTouchEnd={onTouchEnd}
                 >
                     <div className="relative w-full max-w-2xl group">
-                        {/* IMAGE */}
                         <div className="relative w-full h-[35vh] sm:h-[45vh] md:h-[50vh] lg:h-[60vh] overflow-hidden">
                             {slides.map((slide, index) => (
                                 <Image
@@ -92,7 +89,6 @@ export default function SplitCarouselSection({ leftTitle, leftParagraph, slides 
                             ))}
                         </div>
 
-                        {/* ARROWS */}
                         <div className="flex lg:block">
                             <div className="hidden sm:block absolute top-1/2 -translate-y-1/2 left-2 sm:left-3 text-white cursor-pointer bg-black/40 p-2 rounded-full backdrop-blur-sm sm:opacity-0 sm:group-hover:opacity-100 transition">
                                 <BsChevronCompactLeft
@@ -109,7 +105,6 @@ export default function SplitCarouselSection({ leftTitle, leftParagraph, slides 
                             </div>
                         </div>
 
-                        {/* DOTS */}
                         <div className="flex justify-center gap-2 mt-4">
                             {slides.map((_, slideIndex) => (
                                 <div

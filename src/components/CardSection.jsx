@@ -3,7 +3,6 @@ import Image from 'next/image'
 export default function CardSection({ title, cards, imageSrc, transparency }) {
     return (
         <section className="relative overflow-hidden min-h-screen flex items-center sm:p-10 p-3">
-            {/* BACKGROUND */}
             <Image
                 src={imageSrc}
                 alt=""
@@ -12,19 +11,15 @@ export default function CardSection({ title, cards, imageSrc, transparency }) {
                 className="object-cover"
             />
 
-            {/* OVERLAY */}
             <div className={`absolute inset-0 bg-black/${transparency}`}></div>
 
-            {/* CONTENT */}
             <div className="relative w-full max-w-6xl mx-auto">
-                {/* TITLE */}
                 <div className="text-center mb-4 sm:mb-5">
                     <h2 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl uppercase text-white tracking-wide">
                         {title}
                     </h2>
                 </div>
 
-                {/* CARDS */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-5">
                     {cards.map((card, index) => (
                         <div

@@ -8,7 +8,6 @@ export default function SplitVideoSection({
     return (
         <section className="min-h-screen flex items-center sm:p-10 p-5">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 sm:gap-12 lg:gap-20 w-full items-center">
-                {/* TEXT */}
                 <div className="max-w-xl mx-auto">
                     <h2 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl uppercase mb-2 sm:mb-3 text-center md:text-left tracking-wide">
                         {leftTitle}
@@ -19,7 +18,6 @@ export default function SplitVideoSection({
                     </p>
                 </div>
 
-                {/* SLIDER */}
                 <div className="flex justify-center">
                     <div className="relative w-full max-w-2xl">
                         <video

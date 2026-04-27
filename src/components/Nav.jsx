@@ -22,7 +22,6 @@ export default function Nav() {
                 <div
                     className={`z-30 absolute left-0 right-0 h-20 sm:h-20 w-full flex items-center justify-between bg-linear-to-b from-black/70 to-transparent text-white`}
                 >
-                    {/* Overlay */}
                     <div
                         className={`absolute sm:hidden inset-0 bg-black z-10 transition-opacity duration-500 ${
                             menuOpen ? 'opacity-100' : 'opacity-0'
@@ -96,13 +95,11 @@ export default function Nav() {
                     </div>
                 </div>
 
-                {/* Hamburger */}
                 <div
                     onClick={handleNav}
                     className="sm:hidden cursor-pointer absolute top-0 h-20 flex items-center justify-end right-0 px-5 text-white z-30"
                 >
                     <div className="relative w-8 h-8">
-                        {/* Hamburger */}
                         <AiOutlineMenu
                             className={`absolute text-3xl transition-all duration-300 ${
                                 menuOpen
@@ -111,7 +108,6 @@ export default function Nav() {
                             }`}
                         />
 
-                        {/* X */}
                         <AiOutlineClose
                             className={`absolute text-3xl transition-all duration-300 ${
                                 menuOpen
@@ -122,7 +118,6 @@ export default function Nav() {
                     </div>
                 </div>
 
-                {/* Menu */}
                 <div
                     className={`fixed top-20 w-full sm:hidden h-[calc(100vh-5rem)] bg-black px-[2vw] transition-opacity duration-500 ease-in-out z-20 ${
                         menuOpen

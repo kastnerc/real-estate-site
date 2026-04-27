@@ -29,15 +29,6 @@ export default function Home() {
             </section>
 
             <section className="snap-start min-h-screen">
-                {/* <SplitCarouselSection
-                    leftTitle={t('splitCarouselSection.leftTitle')}
-                    leftParagraph={t('splitCarouselSection.leftParagraph')}
-                    slides={[
-                        '/images/conference-room.jpg',
-                        '/images/Office picture.jpg',
-                        '/images/Triplex.png',
-                    ]}
-                /> */}
 
                 <SplitVideoSection
                     leftTitle={t('splitCarouselSection.leftTitle')}
