@@ -1,50 +1,155 @@
-export default function CardCarousel() {
+'use client'
+
+import React, { useState } from 'react'
+import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs'
+import { RxDotFilled } from 'react-icons/rx'
+import Image from 'next/image'
+
+export default function CardCarousel({
+    paragraphs,
+    cardTitles,
+    title,
+    imageSrc,
+    transparency,
+}) {
+    const [touchStart, setTouchStart] = useState(null)
+    const [touchEnd, setTouchEnd] = useState(null)
+
+    const minSwipeDistance = 50
+
+    const onTouchStart = (e) => {
+        setTouchEnd(null)
+        setTouchStart(e.targetTouches[0].clientX)
+    }
+
+    const onTouchMove = (e) => {
+        setTouchEnd(e.targetTouches[0].clientX)
+    }
+
+    const onTouchEnd = () => {
+        if (!touchStart || !touchEnd) return
+
+        const distance = touchStart - touchEnd
+
+        if (distance > minSwipeDistance) {
+            // swipe left → next
+            nextSlide()
+        } else if (distance < -minSwipeDistance) {
+            // swipe right → prev
+            prevSlide()
+        }
+    }
+
+    const [currentIndex, setCurrentIndex] = useState(0)
+
+    const prevSlide = () => {
+        const isFirstSlide = currentIndex === 0
+        const newIndex = isFirstSlide ? paragraphs.length - 1 : currentIndex - 1
+        setCurrentIndex(newIndex)
+    }
+
+    const nextSlide = () => {
+        const isLastSlide = currentIndex === paragraphs.length - 1
+        const newIndex = isLastSlide ? 0 : currentIndex + 1
+        setCurrentIndex(newIndex)
+    }
+
+    const goToSlide = (slideIndex) => {
+        setCurrentIndex(slideIndex)
+    }
+
     return (
-        <section className="relative overflow-hidden p-10 min-h-screen flex items-center justify-center">
+        <section className="relative overflow-hidden min-h-screen flex items-center justify-center sm:p-10 p-5">
+            <Image
+                src={imageSrc}
+                alt=""
+                fill
+                sizes="100vw"
+                className="object-cover"
+            />
+
             <div>
                 <div
-                className="absolute inset-0 bg-center bg-cover bg-fixed"
-                style={{
-                    backgroundImage: "url('/images/Conference room.jpg')",
-                }}
-            ></div>
+                    className={`absolute inset-0 bg-black/${transparency}`}
+                ></div>
 
-            <div className="absolute top-0 left-0 w-full h-full bg-black/90"></div>
+                {/* CONTENT */}
+                <div className="text-center">
+                    <h2 className="relative mb-5 text-xl md:text-2xl lg:text-3xl xl:text-4xl uppercase text-white tracking-wide">
+                        {title}
+                    </h2>
 
-                <div className="relative text-center">
-                    <h1 className="text-3xl uppercase text-white">
-                        Our Approach
-                    </h1>
-                </div>
-                <div className="relative p-10">
-                    <div className="text-center backdrop-blur-md border border-white p-5 w-[50vw]">
-                        <h2 className="text-xl uppercase text-white">
-                            Lorem ipsum dolor
-                        </h2>
-                        <p className="px-5 text-white text-left">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Obcaecati corrupti eveniet facilis officiis
-                            expedita quidem iusto aliquid incidunt accusamus
-                            iure. Quos sequi hic debitis, quisquam laudantium
-                            cumque rerum consectetur sapiente! Lorem ipsum dolor
-                            sit amet consectetur adipisicing elit. Obcaecati
-                            corrupti eveniet facilis officiis expedita quidem
-                            iusto aliquid incidunt accusamus iure. Quos sequi
-                            hic debitis, quisquam laudantium cumque rerum
-                            consectetur sapiente!
-                            <br />
-                            <br />
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Obcaecati corrupti eveniet facilis officiis
-                            expedita quidem iusto aliquid incidunt accusamus
-                            iure. Quos sequi hic debitis, quisquam laudantium
-                            cumque rerum consectetur sapiente! Lorem ipsum dolor
-                            sit amet consectetur adipisicing elit. Obcaecati
-                            corrupti eveniet facilis officiis expedita quidem
-                            iusto aliquid incidunt accusamus iure. Quos sequi
-                            hic debitis, quisquam laudantium cumque rerum
-                            consectetur sapiente!
-                        </p>
+                    <div
+                        className="py-2 px-5 relative flex justify-center items-center flex-col backdrop-blur-md bg-white/5 border border-white/20 group sm:max-w-[75vw] lg:max-w-[50vw]"
+                        onTouchStart={onTouchStart}
+                        onTouchMove={onTouchMove}
+                        onTouchEnd={onTouchEnd}
+                    >
+                        <div className="relative h-10 w-full flex items-center justify-center">
+                            {cardTitles.map((text, index) => (
+                                <h3
+                                    key={index}
+                                    className={`absolute inset-0 flex items-center justify-center text-md md:text-lg lg:text-xl xl:text-2xl uppercase text-white transition-opacity duration-500 ${
+                                        index === currentIndex
+                                            ? 'opacity-100'
+                                            : 'opacity-0'
+                                    }`}
+                                >
+                                    {text}
+                                </h3>
+                            ))}
+                        </div>
+
+                        <div className="relative w-full flex items-center justify-center">
+                            <p className="text-sm md:text-md lg:text-lg xl:text-xl  text-white leading-relaxed opacity-0 pointer-events-none">
+                                {paragraphs[currentIndex]}
+                            </p>
+
+                            {paragraphs.map((text, index) => (
+                                <p
+                                    key={index}
+                                    className={`absolute inset-0 flex items-center justify-center text-center text-sm md:text-md lg:text-lg xl:text-xl text-white leading-relaxed transition-opacity duration-500 ${
+                                        index === currentIndex
+                                            ? 'opacity-100'
+                                            : 'opacity-0'
+                                    }`}
+                                >
+                                    {text}
+                                </p>
+                            ))}
+                        </div>
+
+                        <div className="w-full sm:block justify-around items-center">
+                            <div className="hidden sm:block sm:absolute sm:top-1/2 sm:-translate-y-1/2 sm:left-3 text-white cursor-pointer bg-black/60 p-2 rounded-full backdrop-blur-sm sm:opacity-0 sm:group-hover:opacity-100 transition">
+                                <BsChevronCompactLeft
+                                    onClick={prevSlide}
+                                    size={26}
+                                />
+                            </div>
+
+                            <div className="flex justify-center gap-2">
+                                {paragraphs.map((_, slideIndex) => (
+                                    <div
+                                        key={slideIndex}
+                                        onClick={() => goToSlide(slideIndex)}
+                                        className={`text-xl text-white cursor-pointer transition transform ${
+                                            slideIndex === currentIndex
+                                                ? 'opacity-100 scale-110'
+                                                : 'opacity-40'
+                                        }`}
+                                    >
+                                        <RxDotFilled />
+                                    </div>
+                                ))}
+                            </div>
+
+                            <div className="hidden sm:block sm:absolute sm:top-1/2 sm:-translate-y-1/2 sm:right-3 text-white cursor-pointer bg-black/60 p-2 rounded-full backdrop-blur-sm sm:opacity-0 sm:group-hover:opacity-100 transition">
+                                <BsChevronCompactRight
+                                    onClick={nextSlide}
+                                    size={26}
+                                />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
