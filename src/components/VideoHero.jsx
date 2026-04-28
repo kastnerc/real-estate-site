@@ -14,7 +14,7 @@ export default function VideoHero() {
                 src="/videos/Drone footage.mp4"
             />
 
-            <div className="absolute inset-0 bg-black/30" />
+            <div className="absolute inset-0 bg-black/40" />
 
             <div className="absolute inset-0 flex justify-center items-center">
                 <div className="flex flex-col items-center max-w-[90vw] sm:max-w-[75vw] text-center">

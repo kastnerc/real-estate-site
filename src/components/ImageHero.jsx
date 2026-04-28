@@ -20,7 +20,7 @@ export default function ImageHero({
                 />
             </div>
 
-            <div className="absolute inset-0 bg-black/50"></div>
+            <div className="absolute inset-0 bg-black/60"></div>
 
             <div className="absolute inset-0 flex justify-center items-center">
                 <div className="flex flex-col items-center max-w-[90vw] sm:max-w-[75vw] text-center">
