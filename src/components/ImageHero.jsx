@@ -8,15 +8,17 @@ export default function ImageHero({
     imageAlt,
 }) {
     return (
-        <section className="h-dvh w-full overflow-hidden">
-            <Image
-                src={imageSrc}
-                alt={imageAlt}
-                fill
-                priority
-                sizes="100vw"
-                className="object-cover"
-            />
+        <section className="relative h-dvh w-full overflow-hidden">
+            <div className="fixed inset-0 -z-10">
+                <Image
+                    src={imageSrc}
+                    alt={imageAlt}
+                    fill
+                    priority
+                    sizes="100vw"
+                    className="object-cover"
+                />
+            </div>
 
             <div className="absolute inset-0 bg-black/50"></div>
 

@@ -1,17 +1,20 @@
 import Image from 'next/image'
 
-export default function CardGridSection({ title, cards, imageSrc, transparency }) {
+export default function CardGridSection({ title, cards, imageSrc }) {
     return (
         <section className="relative overflow-hidden min-h-dvh flex items-center sm:p-10 p-3">
-            <Image
-                src={imageSrc}
-                alt=""
-                fill
-                sizes="100vw"
-                className="object-cover"
-            />
+            <div className="fixed inset-0 -z-10">
+                <Image
+                    src={imageSrc}
+                    alt=""
+                    fill
+                    priority
+                    sizes="100vw"
+                    className="object-cover"
+                />
+            </div>
 
-            <div className={`absolute inset-0 bg-black/${transparency}`}></div>
+            <div className={`absolute inset-0 bg-black/80`}></div>
 
             <div className="relative w-full max-w-6xl mx-auto">
                 <div className="text-center mb-4 sm:mb-5">

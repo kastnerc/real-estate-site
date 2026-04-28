@@ -6,6 +6,8 @@ import {
     FaLinkedinIn,
     FaYoutube,
 } from 'react-icons/fa'
+import { MdOutlineEmail } from "react-icons/md";
+import { HiOutlinePhone } from "react-icons/hi";
 import { useTranslations } from 'next-intl'
 
 export default function Footer() {
@@ -29,9 +31,7 @@ export default function Footer() {
                             href="mailto:gkimmobilier@outlook.com"
                             className="group flex items-center justify-center"
                         >
-                            <span className="text-lg md:text-xl lg:text-2xl mr-1">
-                                ✉
-                            </span>
+                            <MdOutlineEmail className="text-lg md:text-xl lg:text-2xl mr-1"/>
 
                             <span
                                 className="bg-linear-to-r from-current to-current
@@ -47,9 +47,7 @@ export default function Footer() {
                             href="tel:+18194850926"
                             className="group flex items-center justify-center"
                         >
-                            <span className="text-lg md:text-xl lg:text-2xl mr-1">
-                                ☎
-                            </span>
+                            <HiOutlinePhone  className="text-lg md:text-xl lg:text-2xl mr-1"/>
 
                             <span
                                 className="bg-linear-to-r from-current to-current

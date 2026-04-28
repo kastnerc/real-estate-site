@@ -10,7 +10,6 @@ export default function CardCarouselSection({
     cardTitles,
     title,
     imageSrc,
-    transparency,
 }) {
     const [touchStart, setTouchStart] = useState(null)
     const [touchEnd, setTouchEnd] = useState(null)
@@ -58,18 +57,19 @@ export default function CardCarouselSection({
 
     return (
         <section className="relative overflow-hidden min-h-dvh flex items-center justify-center sm:p-10 p-5">
-            <Image
-                src={imageSrc}
-                alt=""
-                fill
-                sizes="100vw"
-                className="object-cover"
-            />
+            <div className="fixed inset-0 -z-10">
+                <Image
+                    src={imageSrc}
+                    alt=""
+                    fill
+                    priority
+                    sizes="100vw"
+                    className="object-cover"
+                />
+            </div>
 
             <div>
-                <div
-                    className={`absolute inset-0 bg-black/${transparency}`}
-                ></div>
+                <div className={`absolute inset-0 bg-black/80`}></div>
 
                 <div className="text-center">
                     <h2 className="relative mb-5 text-xl md:text-2xl lg:text-3xl uppercase text-white tracking-wide">

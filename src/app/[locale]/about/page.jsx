@@ -50,7 +50,6 @@ export default function About() {
                         t('cardCarouselSection.paragraph3'),
                     ]}
                     imageSrc="/images/gatineau-skyline.jpg"
-                    transparency={30}
                 />
             </section>
         </>
