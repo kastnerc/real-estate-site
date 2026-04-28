@@ -36,7 +36,7 @@ export default function VideoHero() {
                     <p
                         className="
                     text-white sm:my-3
-                    text-sm md:text-md lg:text-lg xl:text-xl
+                    text-md md:text-lg xl:text-xl
                     max-w-xl
                 "
                     >

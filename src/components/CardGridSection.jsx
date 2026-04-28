@@ -15,7 +15,7 @@ export default function CardGridSection({ title, cards, imageSrc, transparency }
 
             <div className="relative w-full max-w-6xl mx-auto">
                 <div className="text-center mb-4 sm:mb-5">
-                    <h2 className="text-lg md:text-xl lg:text-2xl xl:text-3xl uppercase text-white tracking-wide">
+                    <h2 className="text-xl md:text-2xl lg:text-3xl uppercase text-white tracking-wide">
                         {title}
                     </h2>
                 </div>
@@ -27,11 +27,11 @@ export default function CardGridSection({ title, cards, imageSrc, transparency }
                             className={`text-center backdrop-blur-md bg-white/5 border border-white/20 p-3 sm:p-5
                                 ${card.isWide ? 'sm:col-span-2 lg:col-span-1' : ''}`}
                         >
-                            <h3 className="text-sm md:text-md lg:text-lg xl:text-xl uppercase text-white mb-2 sm:mb-3">
+                            <h3 className="text-md md:text-lg lg:text-lg uppercase text-white mb-2 sm:mb-3">
                                 {card.title}
                             </h3>
 
-                            <p className="text-xs md:text-sm lg:text-md xl:text-lg text-white leading-relaxed">
+                            <p className="text-sm md:text-md lg:text-lg text-white leading-relaxed">
                                 {card.paragraph}
                             </p>
                         </div>

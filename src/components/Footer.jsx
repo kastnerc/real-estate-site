@@ -24,7 +24,7 @@ export default function Footer() {
                         className="w-70 p-2"
                     />
 
-                    <div className="text-center text-xs md:text-sm lg:text-md">
+                    <div className="text-center text-sm md:text-md lg:text-lg">
                         <a
                             href="mailto:gkimmobilier@outlook.com"
                             className="group flex items-center justify-center"
@@ -98,7 +98,7 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="text-xs md:text-sm lg:text-md md:text-right flex flex-col gap-2 mt-auto justify-end pb-2">
+                <div className="text-sm md:text-md lg:text-lg md:text-right flex flex-col gap-2 mt-auto justify-end pb-2">
                     <div className="flex justify-around">
                         <Link
                             href="/"

@@ -25,14 +25,14 @@ export default function ImageHero({
                     <h1
                         className="flex items-center justify-center w-full max-w-5xl
                     text-white uppercase
-                    text-2xl sm:text-3xl md:text-4xl lg:text-5xl
+                    text-3xl md:text-4xl lg:text-5xl
                     tracking-wide"
                     >
                         {title}
                     </h1>
                     <p
                         className="text-white sm:my-3
-                    text-sm md:text-md lg:text-lg xl:text-xl"
+                    text-md md:text-lg xl:text-xl"
                     >
                         {subtitle}
                     </p>
@@ -40,7 +40,7 @@ export default function ImageHero({
             </div>
 
             <div className="absolute bottom-6 w-full flex flex-col items-center text-white">
-                <span className="text-xs sm:text-sm">{scroll}</span>
+                <span className="text-sm">{scroll}</span>
 
                 <span className="animate-bounce text-lg">↓</span>
             </div>

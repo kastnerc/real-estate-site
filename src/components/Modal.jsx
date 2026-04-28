@@ -19,7 +19,7 @@ export default function Modal({ message }) {
                     <AiOutlineClose className="cursor-pointer hover:text-black/50" />
                 </div>
 
-                <p className="w-full flex-col flex items-center text-xs md:text-sm lg:text-md xl:text-lg">
+                <p className="w-full flex-col flex items-center text-sm md:text-md lg:text-lg">
                     {message}
                 </p>
             </div>
