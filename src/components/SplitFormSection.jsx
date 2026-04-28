@@ -42,7 +42,7 @@ export default function SplitFormSection() {
     }
 
     return (
-        <section className="min-h-screen flex items-center justify-center flex-col bg-black text-white lg:p-10 p-5">
+        <section className="min-h-dvh flex items-center justify-center flex-col bg-black text-white lg:p-10 p-5">
             <h2 className="text-lg md:text-xl lg:text-2xl xl:text-3xl md:text-left no-underline font-light uppercase mb-5">
                 {t('splitFormSection.title')}
             </h2>

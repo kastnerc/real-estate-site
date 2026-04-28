@@ -22,7 +22,7 @@ export default function About() {
 
     return (
         <>
-            <section className="snap-start min-h-screen">
+            <section className="snap-start min-h-dvh">
                 <ImageHero
                     title={t('hero.title')}
                     subtitle={t('hero.subtitle')}
@@ -32,11 +32,11 @@ export default function About() {
                 />
             </section>
 
-            <section className="snap-start min-h-screen">
+            <section className="snap-start min-h-dvh">
                 <TeamGridSection />
             </section>
 
-            <section className="snap-start min-h-screen">
+            <section className="snap-start min-h-dvh">
                 <CardCarouselSection
                     title={t('cardCarouselSection.title')}
                     cardTitles={[

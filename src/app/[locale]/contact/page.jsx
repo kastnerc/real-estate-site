@@ -21,7 +21,7 @@ export default function Contact() {
 
     return (
         <>
-            <section className="snap-start min-h-screen">
+            <section className="snap-start min-h-dvh">
                 <ImageHero
                     title={t('hero.title')}
                     subtitle={t('hero.subtitle')}
@@ -31,7 +31,7 @@ export default function Contact() {
                 />
             </section>
 
-            <section className="snap-start min-h-screen">
+            <section className="snap-start min-h-dvh">
                 <SplitFormSection />
             </section>
         </>

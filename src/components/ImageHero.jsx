@@ -8,7 +8,7 @@ export default function ImageHero({
     imageAlt,
 }) {
     return (
-        <section className="h-screen w-full overflow-hidden">
+        <section className="h-dvh w-full overflow-hidden">
             <Image
                 src={imageSrc}
                 alt={imageAlt}

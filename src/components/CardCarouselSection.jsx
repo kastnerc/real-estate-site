@@ -57,7 +57,7 @@ export default function CardCarouselSection({
     }
 
     return (
-        <section className="relative overflow-hidden min-h-screen flex items-center justify-center sm:p-10 p-5">
+        <section className="relative overflow-hidden min-h-dvh flex items-center justify-center sm:p-10 p-5">
             <Image
                 src={imageSrc}
                 alt=""

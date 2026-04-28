@@ -119,7 +119,7 @@ export default function Navbar() {
                 </div>
 
                 <div
-                    className={`fixed top-20 w-full sm:hidden h-[calc(100vh-5rem)] bg-black px-[2vw] transition-opacity duration-500 ease-in-out z-20 ${
+                    className={`fixed top-20 w-full sm:hidden h-[calc(100dvh-5rem)] bg-black px-[2vw] transition-opacity duration-500 ease-in-out z-20 ${
                         menuOpen
                             ? 'opacity-100 pointer-events-auto'
                             : 'opacity-0 pointer-events-none'

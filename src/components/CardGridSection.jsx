@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function CardGridSection({ title, cards, imageSrc, transparency }) {
     return (
-        <section className="relative overflow-hidden min-h-screen flex items-center sm:p-10 p-3">
+        <section className="relative overflow-hidden min-h-dvh flex items-center sm:p-10 p-3">
             <Image
                 src={imageSrc}
                 alt=""

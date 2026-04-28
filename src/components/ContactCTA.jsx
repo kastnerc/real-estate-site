@@ -5,7 +5,7 @@ export default function ContactCTA() {
     const t = useTranslations("pages.home.contactCTA")
 
     return (
-        <section className="bg-black h-[50vh] flex w-full sm:p-10 p-5 items-center justify-center">
+        <section className="bg-black h-[50dvh] flex w-full sm:p-10 p-5 items-center justify-center">
                 <div className="flex flex-col place-items-center text-center max-w-[75vw] gap-3">
                     <h2 className="text-lg md:text-xl lg:text-2xl xl:text-3xl uppercase tracking-wide text-white">
                         {t('title')}

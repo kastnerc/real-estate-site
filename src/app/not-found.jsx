@@ -1,6 +1,6 @@
 export default function NotFound() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen text-center px-6">
+    <div className="flex flex-col items-center justify-center min-h-dvh text-center px-6">
       <h1 className="text-3xl font-semibold">Page not found</h1>
 
       <p className="mt-4">

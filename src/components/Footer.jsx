@@ -12,7 +12,7 @@ export default function Footer() {
     const t = useTranslations()
 
     return (
-        <footer className="snap-end my-auto bg-white min-h-[50vh] flex justify-center items-center md:px-10 px-5 w-full">
+        <footer className="snap-end my-auto bg-white min-h-[50dvh] flex justify-center items-center md:px-10 px-5 w-full">
             <div className="flex md:flex-row flex-col items-center md:justify-between justify-center flex-wrap gap-2 sm:gap-5 lg:gap-10 md:w-full max-w-6xl">
                 <div className="gap-2 sm:gap-3 flex-col flex">
                     <Image

@@ -23,11 +23,11 @@ export default function Home() {
     const t = useTranslations('pages.home')
     return (
         <>
-            <section className="snap-start min-h-screen">
+            <section className="snap-start min-h-dvh">
                 <VideoHero />
             </section>
 
-            <section className="snap-start min-h-screen">
+            <section className="snap-start min-h-dvh">
                 <SplitVideoSection
                     leftTitle={t('splitCarouselSection.leftTitle')}
                     leftParagraph={t('splitCarouselSection.leftParagraph')}
@@ -35,7 +35,7 @@ export default function Home() {
                 />
             </section>
 
-            <section className="hidden sm:block snap-start min-h-screen">
+            <section className="hidden sm:block snap-start min-h-dvh">
                 <CardGridSection
                     title={t('cardGridSection.title')}
                     cards={[
@@ -58,7 +58,7 @@ export default function Home() {
                 />
             </section>
 
-            <section className="block sm:hidden snap-start min-h-screen">
+            <section className="block sm:hidden snap-start min-h-dvh">
                 <CardCarouselSection
                     title={t('cardGridSection.title')}
                     cardTitles={[

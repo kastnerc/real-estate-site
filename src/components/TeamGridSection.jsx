@@ -6,7 +6,7 @@ export default function TeamGridSection() {
     const t = useTranslations('pages.about.teamGridSection')
 
     return (
-        <section className="min-h-screen flex w-full sm:p-10 p-5">
+        <section className="min-h-dvh flex w-full sm:p-10 p-5">
             <div className="grid grid-cols-1 sm:grid-cols-2 grid-rows-[auto_auto_1fr] sm:grid-rows-[auto_1fr] gap-1 sm:gap-10 m-auto md:max-w-[75vw] lg:max-w-[60vw] xl:max-w-[50vw]">
                 <h2 className="text-lg md:text-xl lg:text-2xl uppercase tracking-wide pl-2 sm:pl-0">
                     {t('title1')} <br /> {t('title2')}
