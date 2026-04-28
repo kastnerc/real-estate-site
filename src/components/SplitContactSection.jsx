@@ -10,8 +10,8 @@ import {
     FaLinkedinIn,
     FaYoutube,
 } from 'react-icons/fa'
-import { MdOutlineEmail } from "react-icons/md";
-import { HiOutlinePhone } from "react-icons/hi";
+import { MdOutlineEmail } from 'react-icons/md'
+import { HiOutlinePhone } from 'react-icons/hi'
 
 export default function SplitContactSection() {
     const t = useTranslations('pages.contact')
@@ -53,7 +53,7 @@ export default function SplitContactSection() {
                     <form
                         onSubmit={handleSubmit}
                         method="POST"
-                        className="py-1 px-4 sm:px-5 border border-white"
+                        className="py-1 px-4 sm:px-5 border flex-col flex justify-center border-white"
                     >
                         <div className="py-4 sm:pb-5">
                             <label className="block font-medium mb-1">
@@ -100,18 +100,12 @@ export default function SplitContactSection() {
                             ></textarea>
                         </div>
 
-                        <div className="w-full text-center p-4 sm:p-5">
-                            <button
-                                type="submit"
-                                className="bg-black text-white uppercase cursor-pointer
-                                bg-linear-to-r from-white to-white
-                                bg-size-[0%_1px] bg-bottom-left bg-no-repeat
-                                hover:bg-size-[100%_1px]
-                                transition-all duration-300 ease-out"
-                            >
-                                {t('splitFormSection.button')}
-                            </button>
-                        </div>
+                        <button
+                            type="submit"
+                            className="my-3 mx-auto bg-black cursor-pointer h-full py-3 px-7 text-center no-underline border-2 border-white uppercase text-white hover:bg-white hover:text-black transition-colors duration-300 ease-out"
+                        >
+                            {t('splitFormSection.button')}
+                        </button>
 
                         {status === 'success' && (
                             <Modal
@@ -138,7 +132,7 @@ export default function SplitContactSection() {
                                 className="group flex items-center justify-center
                                 text-sm md:text-md lg:text-lg"
                             >
-                                <MdOutlineEmail className="text-lg md:text-xl lg:text-2xl mr-1"/>
+                                <MdOutlineEmail className="text-lg md:text-xl lg:text-2xl mr-1" />
 
                                 <span
                                     className="bg-linear-to-r from-current to-current
@@ -155,7 +149,7 @@ export default function SplitContactSection() {
                                 className="group flex items-center justify-center
                                 text-sm md:text-md lg:text-lg"
                             >
-                                <HiOutlinePhone  className="text-lg md:text-xl lg:text-2xl mr-1"/>
+                                <HiOutlinePhone className="text-lg md:text-xl lg:text-2xl mr-1" />
 
                                 <span
                                     className="bg-linear-to-r from-current to-current
