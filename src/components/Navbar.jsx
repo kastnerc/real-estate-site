@@ -43,7 +43,7 @@ export default function Navbar() {
                     </Link>
 
                     <div className="hidden sm:flex text-center relative">
-                        <ul className="list-none flex items-center gap-3 mx-4 lg:gap-10 lg:mx-10 p-0 sm:text-sm md:text-md lg:text-base">
+                        <ul className="list-none flex items-center gap-3 mx-4 lg:gap-10 lg:mx-10 p-0 text-xs lg:text-sm xl:text-md">
                             <li className="relative">
                                 <Link
                                     href="/"
