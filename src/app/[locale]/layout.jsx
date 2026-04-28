@@ -61,7 +61,7 @@ export default async function RootLayout({ children, params }) {
                 className={`${fahkwang.className} antialiased`}
             >
                 <NextIntlClientProvider>
-                    <main className="snap-y snap-proximity h-dvh overflow-y-scroll relative">
+                    <main className="snap-y snap-proximity h-dvh overflow-y-scroll relative overscroll-none">
                         <Navbar />
 
                         {children}
