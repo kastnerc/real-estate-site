@@ -163,17 +163,15 @@ export default function CardCarouselSection({
                         </div>
                     </div>
 
-                    <button
-                        className="text-md md:text-lg lg:text-lg relative backdrop-blur-sm border-2 border-white uppercase text-white hover:bg-white hover:text-black
-                      transition-colors duration-300 ease-in-out mt-7"
-                    >
+                    <div className="mt-7 flex justify-center">
                         <Link
                             href={buttonPath}
-                            className="py-3 px-5 sm:px-7 block w-full h-full text-center no-underline uppercase"
+                            className="py-3 px-5 sm:px-7 text-md md:text-lg lg:text-lg backdrop-blur-sm border-2 border-white 
+                            uppercase text-white hover:bg-white hover:text-black transition-colors duration-300 ease-in-out"
                         >
                             {buttonText}
                         </Link>
-                    </button>
+                    </div>
                 </div>
             </div>
         </section>
