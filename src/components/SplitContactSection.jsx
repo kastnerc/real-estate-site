@@ -10,8 +10,10 @@ import {
     FaLinkedinIn,
     FaYoutube,
 } from 'react-icons/fa'
+import { MdOutlineEmail } from "react-icons/md";
+import { HiOutlinePhone } from "react-icons/hi";
 
-export default function SplitFormSection() {
+export default function SplitContactSection() {
     const t = useTranslations('pages.contact')
     const [status, setStatus] = useState('')
 
@@ -136,9 +138,7 @@ export default function SplitFormSection() {
                                 className="group flex items-center justify-center
                                 text-sm md:text-md lg:text-lg"
                             >
-                                <span className="text-lg md:text-xl lg:text-2xl mr-1">
-                                    ✉
-                                </span>
+                                <MdOutlineEmail className="text-lg md:text-xl lg:text-2xl mr-1"/>
 
                                 <span
                                     className="bg-linear-to-r from-current to-current
@@ -155,9 +155,7 @@ export default function SplitFormSection() {
                                 className="group flex items-center justify-center
                                 text-sm md:text-md lg:text-lg"
                             >
-                                <span className="text-lg md:text-xl lg:text-2xl mr-1">
-                                    ☎
-                                </span>
+                                <HiOutlinePhone  className="text-lg md:text-xl lg:text-2xl mr-1"/>
 
                                 <span
                                     className="bg-linear-to-r from-current to-current

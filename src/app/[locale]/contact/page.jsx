@@ -1,5 +1,5 @@
 import ImageHero from '@/components/ImageHero'
-import SplitFormSection from '@/components/SplitFormSection'
+import SplitContactSection from '@/components/SplitContactSection'
 import { useTranslations } from 'next-intl'
 import { getTranslations } from 'next-intl/server'
 import { getSeo } from '@/lib/seo'
@@ -32,7 +32,7 @@ export default function Contact() {
             </section>
 
             <section className="snap-start min-h-dvh">
-                <SplitFormSection />
+                <SplitContactSection />
             </section>
         </>
     )
