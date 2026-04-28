@@ -16,10 +16,11 @@ export default function ContactCTA() {
                 <p className="text-sm md:text-md lg:text-lg text-white">
                     {t('subtitle')}
                 </p>
-                <button className="bg-transparent text-sm md:text-md lg:text-lg border border-white uppercase text-white hover:bg-white hover:text-black transition-colors duration-300 ease-out">
+                
+                <button className="text-md md:text-lg lg:text-lg border-2 border-white uppercase text-white hover:bg-white hover:text-black transition-colors duration-300 ease-out">
                     <Link
                         href="/contact"
-                        className="block w-full h-full py-3 px-4 text-center no-underline uppercase"
+                        className="block w-full h-full py-3 px-5 sm:px-7 text-center no-underline uppercase"
                     >
                         {t('button')}
                     </Link>

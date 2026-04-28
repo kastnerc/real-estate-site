@@ -4,12 +4,15 @@ import React, { useState } from 'react'
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs'
 import { RxDotFilled } from 'react-icons/rx'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function CardCarouselSection({
     paragraphs,
     cardTitles,
     title,
     imageSrc,
+    buttonText,
+    buttonPath,
 }) {
     const [touchStart, setTouchStart] = useState(null)
     const [touchEnd, setTouchEnd] = useState(null)
@@ -69,7 +72,7 @@ export default function CardCarouselSection({
             </div>
 
             <div>
-                <div className={`absolute inset-0 bg-black/80`}></div>
+                <div className="absolute inset-0 bg-black/80"></div>
 
                 <div className="text-center">
                     <h2 className="relative mb-5 text-xl md:text-2xl lg:text-3xl uppercase text-white tracking-wide">
@@ -77,7 +80,8 @@ export default function CardCarouselSection({
                     </h2>
 
                     <div
-                        className="py-2 px-5 relative flex justify-center items-center flex-col backdrop-blur-md bg-white/5 border border-white/20 group sm:max-w-[75vw] lg:max-w-[50vw]"
+                        className="py-2 px-5 relative flex justify-center items-center flex-col backdrop-blur-md bg-white/5
+                         border border-white/20 group sm:max-w-[75vw] lg:max-w-[50vw]"
                         onTouchStart={onTouchStart}
                         onTouchMove={onTouchMove}
                         onTouchEnd={onTouchEnd}
@@ -86,11 +90,12 @@ export default function CardCarouselSection({
                             {cardTitles.map((text, index) => (
                                 <h3
                                     key={index}
-                                    className={`absolute inset-0 flex items-center justify-center text-md md:text-lg lg:text-lg uppercase text-white transition-opacity duration-500 ${
-                                        index === currentIndex
-                                            ? 'opacity-100'
-                                            : 'opacity-0'
-                                    }`}
+                                    className={`absolute inset-0 flex items-center justify-center text-md md:text-lg lg:text-lg
+                                         uppercase text-white transition-opacity duration-500 ${
+                                             index === currentIndex
+                                                 ? 'opacity-100'
+                                                 : 'opacity-0'
+                                         }`}
                                 >
                                     {text}
                                 </h3>
@@ -105,11 +110,12 @@ export default function CardCarouselSection({
                             {paragraphs.map((text, index) => (
                                 <p
                                     key={index}
-                                    className={`absolute inset-0 flex items-center justify-center text-center text-sm md:text-md lg:text-lg text-white leading-relaxed transition-opacity duration-500 ${
-                                        index === currentIndex
-                                            ? 'opacity-100'
-                                            : 'opacity-0'
-                                    }`}
+                                    className={`absolute inset-0 flex items-center justify-center text-center text-sm md:text-md 
+                                        lg:text-lg text-white leading-relaxed transition-opacity duration-500 ${
+                                            index === currentIndex
+                                                ? 'opacity-100'
+                                                : 'opacity-0'
+                                        }`}
                                 >
                                     {text}
                                 </p>
@@ -117,7 +123,11 @@ export default function CardCarouselSection({
                         </div>
 
                         <div className="w-full sm:block justify-around items-center">
-                            <div className="hidden sm:block sm:absolute sm:top-1/2 sm:-translate-y-1/2 sm:left-3 text-white cursor-pointer bg-black/60 p-2 rounded-full backdrop-blur-sm sm:opacity-0 sm:group-hover:opacity-100 transition">
+                            <div
+                                className="hidden sm:block sm:absolute sm:top-1/2 sm:-translate-y-1/2 sm:left-3 text-white 
+                            cursor-pointer bg-black/60 p-2 rounded-full backdrop-blur-sm sm:opacity-0 sm:group-hover:opacity-100 
+                            transition"
+                            >
                                 <BsChevronCompactLeft
                                     onClick={prevSlide}
                                     size={26}
@@ -140,7 +150,11 @@ export default function CardCarouselSection({
                                 ))}
                             </div>
 
-                            <div className="hidden sm:block sm:absolute sm:top-1/2 sm:-translate-y-1/2 sm:right-3 text-white cursor-pointer bg-black/60 p-2 rounded-full backdrop-blur-sm sm:opacity-0 sm:group-hover:opacity-100 transition">
+                            <div
+                                className="hidden sm:block sm:absolute sm:top-1/2 sm:-translate-y-1/2 sm:right-3 text-white 
+                            cursor-pointer bg-black/60 p-2 rounded-full backdrop-blur-sm sm:opacity-0 sm:group-hover:opacity-100 
+                            transition"
+                            >
                                 <BsChevronCompactRight
                                     onClick={nextSlide}
                                     size={26}
@@ -148,6 +162,18 @@ export default function CardCarouselSection({
                             </div>
                         </div>
                     </div>
+
+                    <button
+                        className="text-md md:text-lg lg:text-lg relative backdrop-blur-sm border-2 border-white uppercase text-white hover:bg-white hover:text-black
+                      transition-colors duration-300 ease-in-out mt-7"
+                    >
+                        <Link
+                            href={buttonPath}
+                            className="py-3 px-5 sm:px-7 block w-full h-full text-center no-underline uppercase"
+                        >
+                            {buttonText}
+                        </Link>
+                    </button>
                 </div>
             </div>
         </section>

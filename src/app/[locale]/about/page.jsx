@@ -50,6 +50,8 @@ export default function About() {
                         t('cardCarouselSection.paragraph3'),
                     ]}
                     imageSrc="/images/gatineau-skyline.jpg"
+                    buttonText={"Get in touch with us"}
+                    buttonPath={"/contact"}
                 />
             </section>
         </>

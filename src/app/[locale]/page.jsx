@@ -54,7 +54,8 @@ export default function Home() {
                         },
                     ]}
                     imageSrc="/images/gatineau-skyline.jpg"
-                    transparency={30}
+                    buttonText={"Learn more about us"}
+                    buttonPath={"/about"}
                 />
             </section>
 
@@ -72,7 +73,8 @@ export default function Home() {
                         t('cardGridSection.paragraph3'),
                     ]}
                     imageSrc="/images/gatineau-skyline.jpg"
-                    transparency={30}
+                    buttonText={"Learn more about us"}
+                    buttonPath={"/about"}
                 />
             </section>
 
