@@ -72,7 +72,7 @@ export default function CardCarouselSection({
                 ></div>
 
                 <div className="text-center">
-                    <h2 className="relative mb-5 text-xl md:text-2xl lg:text-3xl xl:text-4xl uppercase text-white tracking-wide">
+                    <h2 className="relative mb-5 text-lg md:text-xl lg:text-2xl xl:text-3xl uppercase text-white tracking-wide">
                         {title}
                     </h2>
 
@@ -86,7 +86,7 @@ export default function CardCarouselSection({
                             {cardTitles.map((text, index) => (
                                 <h3
                                     key={index}
-                                    className={`absolute inset-0 flex items-center justify-center text-md md:text-lg lg:text-xl xl:text-2xl uppercase text-white transition-opacity duration-500 ${
+                                    className={`absolute inset-0 flex items-center justify-center text-sm md:text-md lg:text-lg xl:text-xl uppercase text-white transition-opacity duration-500 ${
                                         index === currentIndex
                                             ? 'opacity-100'
                                             : 'opacity-0'
@@ -98,14 +98,14 @@ export default function CardCarouselSection({
                         </div>
 
                         <div className="relative w-full flex items-center justify-center">
-                            <p className="text-sm md:text-md lg:text-lg xl:text-xl  text-white leading-relaxed opacity-0 pointer-events-none">
+                            <p className="text-xs md:text-sm lg:text-md xl:text-lg text-white leading-relaxed opacity-0 pointer-events-none">
                                 {paragraphs[currentIndex]}
                             </p>
 
                             {paragraphs.map((text, index) => (
                                 <p
                                     key={index}
-                                    className={`absolute inset-0 flex items-center justify-center text-center text-sm md:text-md lg:text-lg xl:text-xl text-white leading-relaxed transition-opacity duration-500 ${
+                                    className={`absolute inset-0 flex items-center justify-center text-center text-xs md:text-sm lg:text-md xl:text-lg text-white leading-relaxed transition-opacity duration-500 ${
                                         index === currentIndex
                                             ? 'opacity-100'
                                             : 'opacity-0'

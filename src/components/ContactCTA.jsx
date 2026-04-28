@@ -1,31 +1,30 @@
 import Link from "next/link"
+import { useTranslations } from 'next-intl'
 
 export default function ContactCTA() {
+    const t = useTranslations("pages.home.contactCTA")
+
     return (
-        <section className="py-10 bg-black h-[50vh] flex items-center justify-center">
-            <div>
-                <div className="flex flex-col place-items-center text-center">
-                    <h1 className="text-3xl uppercase py-4 text-white">
-                        Interested in working with us?
-                    </h1>
-
-                    <div className="w-50 border-b border-white"></div>
-
-                    <h2 className="text-white py-4">
-                        Whether you have questions about what we do, investment
-                        opportunities, or potential partnerships, GK Immobilier
-                        would be happy to speak with you.
+        <section className="bg-black h-[50vh] flex w-full sm:p-10 p-5 items-center justify-center">
+                <div className="flex flex-col place-items-center text-center max-w-[75vw] gap-3">
+                    <h2 className="text-lg md:text-xl lg:text-2xl xl:text-3xl uppercase tracking-wide text-white">
+                        {t('title')}
                     </h2>
-                    <button className="bg-transparent text-lg border border-white uppercase text-white hover:bg-white hover:text-black transition-colors duration-300 ease-out">
+
+                    <div className="border-b border-white w-[25vw]"></div>
+
+                    <p className="text-xs md:text-sm lg:text-md xl:text-lg text-white">
+                        {t('subtitle')}
+                    </p>
+                    <button className="bg-transparent text-xs md:text-sm lg:text-md xl:text-lg border border-white uppercase text-white hover:bg-white hover:text-black transition-colors duration-300 ease-out">
                         <Link
                             href="/contact"
-                            className="block w-full h-full py-3 px-7 text-center no-underline uppercase"
+                            className="block w-full h-full py-3 px-4 text-center no-underline uppercase"
                         >
-                            Contact Us
+                            {t('button')}
                         </Link>
                     </button>
                 </div>
-            </div>
         </section>
     )
 }

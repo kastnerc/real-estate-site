@@ -13,8 +13,8 @@ export default function Footer() {
 
     return (
         <footer className="snap-end my-auto bg-white min-h-[50vh] flex justify-center items-center md:px-10 px-5 w-full">
-            <div className="flex lg:flex-row flex-col items-center lg:justify-between justify-center flex-wrap gap-2 sm:gap-5 lg:gap-10 lg:w-full max-w-6xl">
-                <div className="gap-2 sm:gap-5 flex-col flex">
+            <div className="flex md:flex-row flex-col items-center md:justify-between justify-center flex-wrap gap-2 sm:gap-5 lg:gap-10 md:w-full max-w-6xl">
+                <div className="gap-2 sm:gap-3 flex-col flex">
                     <Image
                         src="/images/logo-text-black.png"
                         width={1080}
@@ -24,11 +24,10 @@ export default function Footer() {
                         className="w-70 p-2"
                     />
 
-                    <div className="text-center text-sm md:text-md lg:text-lg">
+                    <div className="text-center text-xs md:text-sm lg:text-md">
                         <a
                             href="mailto:gkimmobilier@outlook.com"
-                            className="group flex items-center justify-center
-                                text-sm lg:text-md xl:text-lg"
+                            className="group flex items-center justify-center"
                         >
                             <span className="text-lg md:text-xl lg:text-2xl mr-1">
                                 ✉
@@ -46,8 +45,7 @@ export default function Footer() {
 
                         <a
                             href="tel:+18194850926"
-                            className="group flex items-center justify-center
-                                text-sm lg:text-md xl:text-lg"
+                            className="group flex items-center justify-center"
                         >
                             <span className="text-lg md:text-xl lg:text-2xl mr-1">
                                 ☎
@@ -64,12 +62,12 @@ export default function Footer() {
                         </a>
                     </div>
 
-                    <div className="flex justify-between text-xl lg:text-2xl">
+                    <div className="flex gap-4 justify-center text-xl lg:text-2xl">
                         <a
                             href="https://www.linkedin.com/in/lo%C3%AFc-gendron/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="p-2 cursor-pointer transition-transform duration-200 hover:scale-120 hover:text-gray-700 text-xl lg:text-2xl"
+                            className="p-2 cursor-pointer transition-transform duration-200 hover:scale-120 hover:text-gray-700"
                         >
                             <FaFacebookF />
                         </a>
@@ -77,7 +75,7 @@ export default function Footer() {
                             href="https://www.linkedin.com/in/lo%C3%AFc-gendron/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="p-2 cursor-pointer transition-transform duration-200 hover:scale-120 hover:text-gray-700 text-xl lg:text-2xl"
+                            className="p-2 cursor-pointer transition-transform duration-200 hover:scale-120 hover:text-gray-700"
                         >
                             <FaInstagram />
                         </a>
@@ -85,7 +83,7 @@ export default function Footer() {
                             href="https://www.linkedin.com/in/lo%C3%AFc-gendron/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="p-2 cursor-pointer transition-transform duration-200 hover:scale-120 hover:text-gray-700 text-xl lg:text-2xl"
+                            className="p-2 cursor-pointer transition-transform duration-200 hover:scale-120 hover:text-gray-700"
                         >
                             <FaLinkedinIn />
                         </a>
@@ -93,15 +91,15 @@ export default function Footer() {
                             href="https://www.linkedin.com/in/lo%C3%AFc-gendron/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="p-2 cursor-pointer transition-transform duration-200 hover:scale-120 hover:text-gray-700 text-xl lg:text-2xl"
+                            className="p-2 cursor-pointer transition-transform duration-200 hover:scale-120 hover:text-gray-700"
                         >
                             <FaYoutube />
                         </a>
                     </div>
                 </div>
 
-                <div className="text-sm md:text-md lg:text-lg md:text-right flex flex-col gap-2 sm:gap-5 mt-auto justify-end">
-                    <div className="flex justify-around gap-6">
+                <div className="text-xs md:text-sm lg:text-md md:text-right flex flex-col gap-2 mt-auto justify-end pb-2">
+                    <div className="flex justify-around">
                         <Link
                             href="/"
                             className="group flex items-center justify-center"
@@ -145,9 +143,9 @@ export default function Footer() {
                         </Link>
                     </div>
 
-                    <div className="text-center text-xs sm:text-sm md:text-md text-gray-600 flex flex-col sm:flex-row items-center">
+                    <div className="text-center text-xs text-gray-600 flex flex-col lg:flex-row items-center">
                         <p className="">{t('footer.copyright')} </p>
-                        <span className="hidden sm:block mx-2 font-bold">
+                        <span className="hidden lg:block mx-2 font-bold">
                             {' '}
                             |{' '}
                         </span>

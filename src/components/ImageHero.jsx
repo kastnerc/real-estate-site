@@ -1,8 +1,14 @@
 import Image from 'next/image'
 
-export default function ImageHero({ title, subtitle, scroll, imageSrc, imageAlt }) {
+export default function ImageHero({
+    title,
+    subtitle,
+    scroll,
+    imageSrc,
+    imageAlt,
+}) {
     return (
-        <div className="relative h-screen w-full overflow-hidden">
+        <section className="h-screen w-full overflow-hidden">
             <Image
                 src={imageSrc}
                 alt={imageAlt}
@@ -14,30 +20,30 @@ export default function ImageHero({ title, subtitle, scroll, imageSrc, imageAlt 
 
             <div className="absolute inset-0 bg-black/50"></div>
 
-            <div className="absolute inset-0 flex flex-col justify-center items-center px-4 sm:px-6 lg:px-12 text-center">
-                <h1
-                    className="flex items-center justify-center w-full max-w-5xl
+            <div className="absolute inset-0 flex justify-center items-center">
+                <div className="flex flex-col items-center max-w-[90vw] sm:max-w-[75vw] text-center">
+                    <h1
+                        className="flex items-center justify-center w-full max-w-5xl
                     text-white uppercase
-                    text-2xl sm:text-4xl md:text-5xl lg:text-6xl
+                    text-2xl sm:text-3xl md:text-4xl lg:text-5xl
                     tracking-wide"
-                >
-                    {title}
-                </h1>
-                <p
-                    className="text-white sm:my-3
-                    text-sm sm:text-base md:text-xl lg:text-2xl"
-                >
-                    {subtitle}
-                </p>
+                    >
+                        {title}
+                    </h1>
+                    <p
+                        className="text-white sm:my-3
+                    text-sm md:text-md lg:text-lg xl:text-xl"
+                    >
+                        {subtitle}
+                    </p>
+                </div>
             </div>
 
             <div className="absolute bottom-6 w-full flex flex-col items-center text-white">
-                <span className="text-xs sm:text-sm md:text-base">
-                    {scroll}
-                </span>
+                <span className="text-xs sm:text-sm">{scroll}</span>
 
                 <span className="animate-bounce text-lg">↓</span>
             </div>
-        </div>
+        </section>
     )
 }

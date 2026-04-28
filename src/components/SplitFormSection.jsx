@@ -43,11 +43,11 @@ export default function SplitFormSection() {
 
     return (
         <section className="min-h-screen flex items-center justify-center flex-col bg-black text-white lg:p-10 p-5">
-            <h2 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl md:text-left no-underline font-light uppercase mb-5">
+            <h2 className="text-lg md:text-xl lg:text-2xl xl:text-3xl md:text-left no-underline font-light uppercase mb-5">
                 {t('splitFormSection.title')}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-2 w-full items-center">
-                <div className="md:col-span-2 lg:col-span-1 lg:pr-10 md:pr-5 md:border-r-2 md:pb-0 md:border-b-0 pb-6 border-b-2 text-sm md:text-md lg:text-lg xl:text-xl">
+                <div className="md:col-span-2 lg:col-span-1 lg:pr-10 md:pr-5 md:border-r-2 md:pb-0 md:border-b-0 pb-6 border-b-2 text-xs md:text-sm lg:text-md">
                     <form
                         onSubmit={handleSubmit}
                         method="POST"
@@ -127,14 +127,14 @@ export default function SplitFormSection() {
                 <div className="lg:pl-10 md:pt-0 pt-4 md:pl-5 w-full md:col-span-3 lg:col-span-1">
                     <div className="grid sm:grid-cols-2 gap-4 sm:gap-5 text-center">
                         <div className="md:mx-0 mx-auto">
-                            <h3 className="text-md lg:text-xl xl:text-2xl uppercase">
+                            <h3 className="text-sm md:text-md lg:text-lg xl:text-xl uppercase">
                                 {t('splitFormSection.office')}
                             </h3>
 
                             <a
                                 href="mailto:gkimmobilier@outlook.com"
                                 className="group flex items-center justify-center
-                                text-sm lg:text-md xl:text-lg"
+                                text-xs md:text-sm lg:text-md xl:text-lg"
                             >
                                 <span className="text-lg md:text-xl lg:text-2xl mr-1">
                                     ✉
@@ -153,7 +153,7 @@ export default function SplitFormSection() {
                             <a
                                 href="tel:+18194850926"
                                 className="group flex items-center justify-center
-                                text-sm lg:text-md xl:text-lg"
+                                text-xs md:text-sm lg:text-md xl:text-lg"
                             >
                                 <span className="text-lg md:text-xl lg:text-2xl mr-1">
                                     ☎
@@ -170,58 +170,8 @@ export default function SplitFormSection() {
                             </a>
                         </div>
 
-                        <div className="md:mx-0">
-                            <p className="text-md lg:text-xl xl:text-2xl uppercase">
-                                Loic Gendron
-                            </p>
-
-                            <div className="flex justify-center gap-10 text-xl lg:text-2xl">
-                                <a
-                                    href="https://www.linkedin.com/in/lo%C3%AFc-gendron/"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="p-2 cursor-pointer transition hover:drop-shadow-[0_0_5px_white] duration-200 hover:scale-120"
-                                >
-                                    <FaFacebookF />
-                                </a>
-                                <a
-                                    href="https://www.linkedin.com/in/lo%C3%AFc-gendron/"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="p-2 cursor-pointer transition hover:drop-shadow-[0_0_5px_white] duration-200 hover:scale-120"
-                                >
-                                    <FaLinkedinIn />
-                                </a>
-                            </div>
-                        </div>
-
                         <div>
-                            <p className="text-md lg:text-xl xl:text-2xl uppercase">
-                                Caleb Kastner
-                            </p>
-
-                            <div className="flex justify-center gap-10 text-xl lg:text-2xl">
-                                <a
-                                    href="https://www.linkedin.com/in/lo%C3%AFc-gendron/"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="p-2 cursor-pointer transition hover:drop-shadow-[0_0_5px_white] duration-200 hover:scale-120"
-                                >
-                                    <FaFacebookF />
-                                </a>
-                                <a
-                                    href="https://www.linkedin.com/in/lo%C3%AFc-gendron/"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="p-2 cursor-pointer transition hover:drop-shadow-[0_0_5px_white] duration-200 hover:scale-120"
-                                >
-                                    <FaLinkedinIn />
-                                </a>
-                            </div>
-                        </div>
-
-                        <div className="">
-                            <h2 className="text-md lg:text-xl xl:text-2xl uppercase">
+                            <h2 className="text-sm md:text-md lg:text-lg xl:text-xl uppercase">
                                 {t('splitFormSection.socials')}
                             </h2>
 
@@ -257,6 +207,56 @@ export default function SplitFormSection() {
                                     className="p-2 cursor-pointer transition hover:drop-shadow-[0_0_5px_white] duration-200 hover:scale-120"
                                 >
                                     <FaYoutube />
+                                </a>
+                            </div>
+                        </div>
+
+                        <div className="md:mx-0">
+                            <p className="text-sm md:text-md lg:text-lg xl:text-xl uppercase">
+                                Loic Gendron
+                            </p>
+
+                            <div className="flex justify-center gap-10 text-xl lg:text-2xl">
+                                <a
+                                    href="https://www.linkedin.com/in/lo%C3%AFc-gendron/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="p-2 cursor-pointer transition hover:drop-shadow-[0_0_5px_white] duration-200 hover:scale-120"
+                                >
+                                    <FaFacebookF />
+                                </a>
+                                <a
+                                    href="https://www.linkedin.com/in/lo%C3%AFc-gendron/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="p-2 cursor-pointer transition hover:drop-shadow-[0_0_5px_white] duration-200 hover:scale-120"
+                                >
+                                    <FaLinkedinIn />
+                                </a>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p className="text-sm md:text-md lg:text-lg xl:text-xl uppercase">
+                                Caleb Kastner
+                            </p>
+
+                            <div className="flex justify-center gap-10 text-xl lg:text-2xl">
+                                <a
+                                    href="https://www.linkedin.com/in/lo%C3%AFc-gendron/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="p-2 cursor-pointer transition hover:drop-shadow-[0_0_5px_white] duration-200 hover:scale-120"
+                                >
+                                    <FaFacebookF />
+                                </a>
+                                <a
+                                    href="https://www.linkedin.com/in/lo%C3%AFc-gendron/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="p-2 cursor-pointer transition hover:drop-shadow-[0_0_5px_white] duration-200 hover:scale-120"
+                                >
+                                    <FaLinkedinIn />
                                 </a>
                             </div>
                         </div>
