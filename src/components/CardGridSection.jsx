@@ -30,14 +30,14 @@ export default function CardGridSection({
                     </h2>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-5">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-5">
                     {cards.map((card, index) => (
                         <div
                             key={index}
-                            className={`text-center backdrop-blur-md bg-white/5 border border-white/20 p-3 md:p-5
-                                ${card.isWide ? 'sm:col-span-2 lg:col-span-1' : ''}`}
+                            className={`text-center backdrop-blur-md bg-white/5 border border-white/20 p-2 md:p-3
+                                ${card.isWide ? 'sm:col-span-2 md:col-span-1' : ''}`}
                         >
-                            <h3 className="text-md md:text-lg lg:text-lg uppercase text-white mb-2 sm:mb-3">
+                            <h3 className="text-md md:text-lg lg:text-lg uppercase text-white mb-1 sm:mb-2">
                                 {card.title}
                             </h3>
 
@@ -47,11 +47,11 @@ export default function CardGridSection({
                         </div>
                     ))}
                 </div>
-                
+
                 <Link
                     href={buttonPath}
                     className="py-3 px-5 sm:px-7 text-md md:text-lg lg:text-lg relative backdrop-blur-sm border-2 border-white 
-                    text-white hover:bg-white hover:text-black transition-colors duration-300 ease-in-out mt-7 mx-auto uppercase"
+                    text-white hover:bg-white hover:text-black transition-colors duration-300 ease-in-out mt-6 sm:mt-7 mx-auto uppercase"
                 >
                     {buttonText}
                 </Link>
