@@ -58,8 +58,11 @@ export default function CardCarouselSection({
         setCurrentIndex(slideIndex)
     }
 
+    const isFirst = currentIndex === 0
+    const isLast = currentIndex === paragraphs.length - 1
+
     return (
-        <section className="relative overflow-hidden min-h-dvh flex items-center justify-center sm:p-10 p-5">
+        <section className="relative overflow-hidden min-h-dvh flex items-center justify-center sm:p-10 p-12">
             <div className="fixed inset-0 -z-10">
                 <Image
                     src={imageSrc}
@@ -80,22 +83,26 @@ export default function CardCarouselSection({
                     </h2>
 
                     <div
-                        className="py-2 px-5 relative flex justify-center items-center flex-col backdrop-blur-md bg-white/5
+                        className="p-3 sm:p-5 relative flex justify-center items-center flex-col backdrop-blur-md bg-white/5
                          border border-white/20 group sm:max-w-[75vw] lg:max-w-[50vw]"
                         onTouchStart={onTouchStart}
                         onTouchMove={onTouchMove}
                         onTouchEnd={onTouchEnd}
                     >
-                        <div className="relative h-10 w-full flex items-center justify-center">
+                        <div className="relative w-full flex items-center justify-center text-center">
+                            {/* Ghost element to define dynamic height */}
+                            <h3 className="text-md md:text-lg lg:text-lg uppercase text-white opacity-0 pointer-events-none">
+                                {cardTitles[currentIndex]}
+                            </h3>
+
+                            {/* Animated titles */}
                             {cardTitles.map((text, index) => (
                                 <h3
                                     key={index}
                                     className={`absolute inset-0 flex items-center justify-center text-md md:text-lg lg:text-lg
-                                         uppercase text-white transition-opacity duration-500 ${
-                                             index === currentIndex
-                                                 ? 'opacity-100'
-                                                 : 'opacity-0'
-                                         }`}
+                                    uppercase text-white text-center transition-opacity duration-500 ${
+                index === currentIndex ? 'opacity-100' : 'opacity-0'
+            }`}
                                 >
                                     {text}
                                 </h3>
@@ -159,6 +166,28 @@ export default function CardCarouselSection({
                                     onClick={nextSlide}
                                     size={26}
                                 />
+                            </div>
+
+                            <div className="sm:hidden">
+                                {!isFirst && (
+                                    <button
+                                        onClick={prevSlide}
+                                        className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-[calc(100%+8px)] z-10 
+                                        bg-black/60 text-white p-1.5 rounded-full backdrop-blur-sm border border-white/40"
+                                    >
+                                        <BsChevronCompactLeft size={22} />
+                                    </button>
+                                )}
+
+                                {!isLast && (
+                                    <button
+                                        onClick={nextSlide}
+                                        className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-[calc(100%+5px)] z-10 
+                                        bg-black/60 text-white p-1.5 rounded-full backdrop-blur-sm border border-white/40"
+                                    >
+                                        <BsChevronCompactRight size={22} />
+                                    </button>
+                                )}
                             </div>
                         </div>
                     </div>
