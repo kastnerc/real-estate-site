@@ -21,6 +21,8 @@ export async function generateMetadata({ params }) {
 
 export default function Home() {
     const t = useTranslations('pages.home')
+    const content = t.raw('splitVideoSection')
+
     return (
         <>
             <section className="snap-start min-h-dvh">
@@ -28,14 +30,11 @@ export default function Home() {
             </section>
 
             <section className="snap-start min-h-dvh">
-                <SplitVideoSection
-                    leftTitle={t('splitCarouselSection.leftTitle')}
-                    leftParagraph={t('splitCarouselSection.leftParagraph')}
-                    videoSrc="/videos/triplex-montage.mp4"
+                <SplitVideoSection {...content}
                 />
             </section>
 
-            <section className="hidden sm:block snap-start min-h-dvh">
+            <section className="block snap-start min-h-dvh">
                 <CardGridSection
                     title={t('cardGridSection.title')}
                     cards={[
@@ -59,7 +58,7 @@ export default function Home() {
                 />
             </section>
 
-            <section className="block sm:hidden snap-start min-h-dvh">
+            <section className="hidden snap-start min-h-dvh">
                 <CardCarouselSection
                     title={t('cardGridSection.title')}
                     cardTitles={[
