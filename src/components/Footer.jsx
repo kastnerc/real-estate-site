@@ -141,9 +141,9 @@ export default function Footer() {
                         </Link>
                     </div>
 
-                    <div className="text-center text-xs text-gray-600 flex flex-col lg:flex-row items-center">
+                    <div className="text-center text-xs text-gray-600 flex flex-col md:flex-row items-center">
                         <p className="">{t('footer.copyright')} </p>
-                        <span className="hidden lg:block mx-2 font-bold">
+                        <span className="hidden md:block mx-2 font-bold">
                             {' '}
                             |{' '}
                         </span>

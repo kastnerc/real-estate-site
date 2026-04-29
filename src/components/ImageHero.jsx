@@ -42,7 +42,7 @@ export default function ImageHero({
             </div>
 
             <div className="absolute bottom-6 w-full flex flex-col items-center text-white">
-                <span className="text-sm">{scroll}</span>
+                <span className="text-xs sm:text-sm">{scroll}</span>
 
                 <span className="animate-bounce text-lg">↓</span>
             </div>
