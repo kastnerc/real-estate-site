@@ -20,7 +20,7 @@ export default function Navbar() {
         <nav>
             <div className="relative">
                 <div
-                    className={`z-30 absolute left-0 right-0 h-20 sm:h-20 w-full flex items-center justify-between bg-linear-to-b from-black/70 to-transparent text-white`}
+                    className={`z-30 ${menuOpen ? 'fixed' : 'absolute'} left-0 right-0 h-20 sm:h-20 w-full flex items-center justify-between bg-linear-to-b from-black/70 to-transparent text-white`}
                 >
                     <div
                         className={`absolute sm:hidden inset-0 bg-black z-10 transition-opacity duration-500 ${
